@@ -10,6 +10,10 @@ Physician-led typed NCCN graph review
 
 Our view is that guideline graphs and automated retrieval should support, not replace, clinician judgement. Real-world oncology decision-making often depends not only on published guideline content, but also on the latest practice changes, emerging or not-yet-published clinical trial signals, and region-specific experience. For that reason, we intentionally adopt a semi-automated approach that keeps final knowledge interpretation and decision-making in the hands of physicians.
 
+![supfig](fig/supfig.png)
+
+This framework represents the guideline flowchart as a structured directed graph composed of Condition, Evaluation, Treatment, and Page Jump nodes, while preserving the original decision logic and path constraints through relations such as is followed by, requires, and indicates. In addition, each treatment option is linked to its corresponding footnotes, principle statements, and reference pages, integrating information that is otherwise scattered across the flowchart, annotations, and main text into traceable, retrievable, and interpretable page-level knowledge units. This provides a foundation for topology-constrained retrieval and downstream clinical decision support.
+
 ![show](fig/Snipaste.png)
 
 ## License (this repository)
