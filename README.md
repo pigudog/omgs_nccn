@@ -10,6 +10,8 @@ Physician-led typed NCCN graph review
 
 Our view is that guideline graphs and automated retrieval should support, not replace, clinician judgement. Real-world oncology decision-making often depends not only on published guideline content, but also on the latest practice changes, emerging or not-yet-published clinical trial signals, and region-specific experience. For that reason, we intentionally adopt a semi-automated approach that keeps final knowledge interpretation and decision-making in the hands of physicians.
 
+![show](fig/Snipaste.png)
+
 ## License (this repository)
 
 The **source code and tooling** in this repository are licensed under the [MIT License](LICENSE).
