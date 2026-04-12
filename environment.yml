@@ -1,0 +1,13 @@
+name: omgs_nccn
+channels:
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+  - defaults
+dependencies:
+  - python=3.10.16
+  - pip=24.3.1
+  - setuptools=75.8.0
+  - wheel=0.45.1
+  - sqlite=3.47.2
+  - pip:
+      - -r requirements.txt
+      - -e .

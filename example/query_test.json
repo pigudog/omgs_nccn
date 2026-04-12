@@ -1,0 +1,2324 @@
+{
+  "status": "query_testset_ready",
+  "prompt_version": "qwen_query_testset_v1",
+  "provider": "qwen_compat",
+  "model": "qwen3-max",
+  "page_count": 22,
+  "query_count": 220,
+  "pages": [
+    {
+      "page_code": "LCOC-1",
+      "page_title": "DIAGNOSIS",
+      "queries": [
+        {
+          "query_id": "q_001",
+          "query_type": "pathway_overview",
+          "question": "What are the initial steps required for diagnosing less common ovarian cancers according to this guideline?",
+          "seed_node_ids": [
+            "LCOC1_F01"
+          ],
+          "expected_focus": "Identify the prerequisite of surgery and histologic diagnosis before categorizing specific tumor types."
+        },
+        {
+          "query_id": "q_002",
+          "query_type": "disease_to_treatment",
+          "question": "After a patient is diagnosed with Carcinosarcoma (malignant mixed Müllerian tumor), which page should be referenced for further management?",
+          "seed_node_ids": [
+            "LCOC1_F02",
+            "LCOC1_F03"
+          ],
+          "expected_focus": "Retrieve the next step in the pathway, specifically the jump to LCOC-2."
+        },
+        {
+          "query_id": "q_003",
+          "query_type": "evaluation_to_decision",
+          "question": "If a patient has Clear cell carcinoma of the ovary confirmed by histology, what is the subsequent pathway reference?",
+          "seed_node_ids": [
+            "LCOC1_F04",
+            "LCOC1_F05"
+          ],
+          "expected_focus": "Determine the next page code (LCOC-3) associated with clear cell carcinoma evaluation."
+        },
+        {
+          "query_id": "q_004",
+          "query_type": "treatment_followup",
+          "question": "For a case of Mucinous neoplasms of the ovary, where does the NCCN guideline direct the clinician for detailed treatment options?",
+          "seed_node_ids": [
+            "LCOC1_F06",
+            "LCOC1_F07"
+          ],
+          "expected_focus": "Locate the continuation page LCOC-4 for mucinous neoplasms."
+        },
+        {
+          "query_id": "q_005",
+          "query_type": "page_jump_continuation",
+          "question": "A patient presents with Grade 1 endometrioid carcinoma; which specific guideline page number covers the management for this condition?",
+          "seed_node_ids": [
+            "LCOC1_F08",
+            "LCOC1_F09"
+          ],
+          "expected_focus": "Identify the target page LCOC-5 as the destination for Grade 1 endometrioid carcinoma."
+        },
+        {
+          "query_id": "q_006",
+          "query_type": "biomarker_or_testing",
+          "question": "Does the initial diagnostic algorithm for Low-grade serous carcinoma require any specific biomarker testing mentioned on this page before proceeding?",
+          "seed_node_ids": [
+            "LCOC1_F10",
+            "LCOC1_F11"
+          ],
+          "expected_focus": "Verify if the current page specifies biomarkers or if it only directs to the next page (LCOC-6)."
+        },
+        {
+          "query_id": "q_007",
+          "query_type": "branch_disambiguation",
+          "question": "How many distinct pages are covered under the category of Ovarian serous borderline epithelial tumors (low malignant potential)?",
+          "seed_node_ids": [
+            "LCOC1_F12",
+            "LCOC1_F13"
+          ],
+          "expected_focus": "Extract the range of pages (LCOC-8 to LCOC-10) indicated for LMP tumors."
+        },
+        {
+          "query_id": "q_008",
+          "query_type": "monitoring_followup",
+          "question": "What is the designated follow-up page for Malignant sex cord-stromal tumors after the initial histologic diagnosis?",
+          "seed_node_ids": [
+            "LCOC1_F14",
+            "LCOC1_F15"
+          ],
+          "expected_focus": "Find the specific page reference LCOC-11 for sex cord-stromal tumors."
+        },
+        {
+          "query_id": "q_009",
+          "query_type": "stress_test_partial_support",
+          "question": "A patient has a Malignant germ cell tumor and is known to have elevated AFP levels; does this page specify how AFP influences the decision to go to LCOC-12?",
+          "seed_node_ids": [
+            "LCOC1_F16",
+            "LCOC1_F17"
+          ],
+          "expected_focus": "Test if the page supports specific biomarker-driven branching within the germ cell tumor section or only provides a general page jump."
+        },
+        {
+          "query_id": "q_010",
+          "query_type": "disease_to_evaluation",
+          "question": "Which specific tumor types listed on this diagnosis page require a jump to multiple subsequent pages rather than a single page?",
+          "seed_node_ids": [
+            "LCOC1_F12",
+            "LCOC1_F13",
+            "LCOC1_F16",
+            "LCOC1_F17"
+          ],
+          "expected_focus": "Identify conditions like LMP tumors and Germ cell tumors that point to page ranges (e.g., LCOC-8 to LCOC-10)."
+        }
+      ]
+    },
+    {
+      "page_code": "LCOC-10",
+      "page_title": "MONITORING/FOLLOW-UP  RECURRENT DISEASE  RECURRENCE THERAPY",
+      "queries": [
+        {
+          "query_id": "Q01",
+          "query_type": "pathway_overview",
+          "question": "What are the recommended monitoring intervals and evaluation components for patients with ovarian serous borderline epithelial tumors after initial treatment?",
+          "seed_node_ids": [
+            "LCOC10_F01"
+          ],
+          "expected_focus": "Retrieve the standard follow-up schedule including visit frequency, physical exams, tumor markers, and imaging modalities."
+        },
+        {
+          "query_id": "Q02",
+          "query_type": "disease_to_treatment",
+          "question": "If a patient presents with clinical relapse of noninvasive disease, what is the primary management strategy?",
+          "seed_node_ids": [
+            "LCOC10_F02",
+            "LCOC10_F04",
+            "LCOC10_F05"
+          ],
+          "expected_focus": "Identify 'Observe' as the management option for noninvasive recurrent disease."
+        },
+        {
+          "query_id": "Q03",
+          "query_type": "evaluation_to_decision",
+          "question": "Upon detecting clinical relapse, what surgical intervention is indicated if the patient is an appropriate candidate?",
+          "seed_node_ids": [
+            "LCOC10_F02",
+            "LCOC10_F03"
+          ],
+          "expected_focus": "Determine that surgical evaluation and debulking are the next steps upon relapse."
+        },
+        {
+          "query_id": "Q04",
+          "query_type": "treatment_followup",
+          "question": "How long should the routine surveillance visits continue for ovarian serous borderline tumors before shifting to clinically indicated visits only?",
+          "seed_node_ids": [
+            "LCOC10_F01"
+          ],
+          "expected_focus": "Extract the 5-year duration for regular 3-12 month interval visits."
+        },
+        {
+          "query_id": "Q05",
+          "query_type": "page_jump_continuation",
+          "question": "A patient with recurrent low-grade invasive carcinoma needs further management; which NCCN page code should be referenced based on histology?",
+          "seed_node_ids": [
+            "LCOC10_F06",
+            "LCOC10_F07"
+          ],
+          "expected_focus": "Identify the jump to LCOC-1 for low-grade invasive carcinoma management."
+        },
+        {
+          "query_id": "Q06",
+          "query_type": "biomarker_or_testing",
+          "question": "Which specific tumor markers or laboratory tests are recommended during every visit if they were initially elevated in this patient population?",
+          "seed_node_ids": [
+            "LCOC10_F01"
+          ],
+          "expected_focus": "List CA-125, CBC, and chemistry profile as indicated testing components."
+        },
+        {
+          "query_id": "Q07",
+          "query_type": "branch_disambiguation",
+          "question": "If a recurrence is identified as high-grade invasive carcinoma rather than noninvasive, how does the treatment pathway diverge from the standard observation route?",
+          "seed_node_ids": [
+            "LCOC10_F08",
+            "LCOC10_F09"
+          ],
+          "expected_focus": "Clarify that high-grade invasive carcinoma requires treatment as epithelial ovarian cancer (OV-4) instead of observation."
+        },
+        {
+          "query_id": "Q08",
+          "query_type": "monitoring_followup",
+          "question": "For a patient who underwent fertility-sparing surgery, is there a specific imaging modality recommended during follow-up?",
+          "seed_node_ids": [
+            "LCOC10_F01"
+          ],
+          "expected_focus": "Confirm the use of ultrasound as an indicated imaging modality for fertility-sparing cases."
+        },
+        {
+          "query_id": "Q09",
+          "query_type": "stress_test_partial_support",
+          "question": "The patient has developed clinical relapse with a new mass, but genetic testing shows BRCA1 mutation positive status; what immediate therapy is listed on this page?",
+          "seed_node_ids": [
+            "LCOC10_F02",
+            "LCOC10_F03"
+          ],
+          "expected_focus": "Return surgical evaluation/debulking options while noting the page does not explicitly link BRCA status to a specific systemic therapy on this node."
+        },
+        {
+          "query_id": "Q10",
+          "query_type": "disease_to_evaluation",
+          "question": "What diagnostic steps are required to confirm whether a recurrence represents low-grade invasive carcinoma versus noninvasive disease?",
+          "seed_node_ids": [
+            "LCOC10_F02",
+            "LCOC10_F04",
+            "LCOC10_F06"
+          ],
+          "expected_focus": "Identify the need for histological differentiation via surgical evaluation to distinguish between noninvasive and low-grade invasive conditions."
+        }
+      ]
+    },
+    {
+      "page_code": "LCOC-11",
+      "page_title": "CLINICAL PRESENTATION/ DIAGNOSIS     ADJUVANT TREATMENT     RECURRENCE THERAPY",
+      "queries": [
+        {
+          "query_id": "Q01",
+          "query_type": "pathway_overview",
+          "question": "What are the key management stages outlined for malignant sex cord-stromal tumors from initial diagnosis through recurrence?",
+          "seed_node_ids": [
+            "LCOC11_F01",
+            "LCOC11_F06",
+            "LCOC11_F14"
+          ],
+          "expected_focus": "Overview of the pathway covering presentation, adjuvant treatment, and recurrence therapy."
+        },
+        {
+          "query_id": "Q02",
+          "query_type": "disease_to_treatment",
+          "question": "For a patient with disease clinically confined to the ovary who desires fertility preservation, what is the recommended surgical approach?",
+          "seed_node_ids": [
+            "LCOC11_F02",
+            "LCOC11_F03"
+          ],
+          "expected_focus": "Identification of fertility-sparing surgery as the primary intervention."
+        },
+        {
+          "query_id": "Q03",
+          "query_type": "evaluation_to_decision",
+          "question": "After complete staging, how should a patient with Stage I low-risk malignant sex cord-stromal tumor be managed?",
+          "seed_node_ids": [
+            "LCOC11_F06",
+            "LCOC11_F07",
+            "LCOC11_F08"
+          ],
+          "expected_focus": "Determination that observation or surveillance is the standard of care for this risk group."
+        },
+        {
+          "query_id": "Q04",
+          "query_type": "treatment_followup",
+          "question": "If a patient with Stage I high-risk features (e.g., ruptured stage IC) is observed, what alternative adjuvant option is suggested?",
+          "seed_node_ids": [
+            "LCOC11_F10",
+            "LCOC11_F11"
+          ],
+          "expected_focus": "Retrieval of platinum-based chemotherapy as an alternative consideration for high-risk cases."
+        },
+        {
+          "query_id": "Q05",
+          "query_type": "disease_to_evaluation",
+          "question": "What post-operative assessment is required following complete staging for patients not meeting fertility-sparing criteria?",
+          "seed_node_ids": [
+            "LCOC11_F04",
+            "LCOC11_F05",
+            "LCOC11_F06"
+          ],
+          "expected_focus": "Identification of post-staging risk/stage assessment as the next step."
+        },
+        {
+          "query_id": "Q06",
+          "query_type": "biomarker_or_testing",
+          "question": "Does the current page specify any specific biomarkers or genetic testing required prior to initiating platinum-based chemotherapy?",
+          "seed_node_ids": [
+            "LCOC11_F11",
+            "LCOC11_F13"
+          ],
+          "expected_focus": "Clarification that no specific biomarkers are listed on this page for chemotherapy initiation."
+        },
+        {
+          "query_id": "Q07",
+          "query_type": "branch_disambiguation",
+          "question": "How does the treatment algorithm differ between Stage I low-risk disease and Stage II-IV disease regarding systemic therapy?",
+          "seed_node_ids": [
+            "LCOC11_F07",
+            "LCOC11_F12"
+          ],
+          "expected_focus": "Contrast between observation for low-risk Stage I versus platinum-based chemotherapy for advanced stages."
+        },
+        {
+          "query_id": "Q08",
+          "query_type": "stress_test_partial_support",
+          "question": "A patient with Stage III disease presents with significant ascites; should we consider radiation therapy alone given the limited disease burden in the pelvis?",
+          "seed_node_ids": [
+            "LCOC11_F12",
+            "LCOC11_F13"
+          ],
+          "expected_focus": "Testing if the graph supports RT for limited disease in advanced stages (category 2B) while noting the primary recommendation is chemotherapy."
+        },
+        {
+          "query_id": "Q09",
+          "query_type": "page_jump_continuation",
+          "question": "The guideline references 'Surveillance (LCOC-B)' for follow-up; which specific NCCN page contains the detailed surveillance schedule?",
+          "seed_node_ids": [
+            "LCOC11_F09",
+            "LCOC11_N01"
+          ],
+          "expected_focus": "Identification of the need to navigate to page LCOC-B for surveillance details."
+        },
+        {
+          "query_id": "Q10",
+          "query_type": "monitoring_followup",
+          "question": "What are the options for managing a patient who experiences clinical relapse after initial treatment?",
+          "seed_node_ids": [
+            "LCOC11_F14"
+          ],
+          "expected_focus": "Retrieval of secondary cytoreductive surgery or recurrence therapy as options for relapse."
+        }
+      ]
+    },
+    {
+      "page_code": "LCOC-12",
+      "page_title": "Malignant germ cell tumors – CLINICAL PRESENTATION/DIAGNOSIS and TREATMENT",
+      "queries": [
+        {
+          "query_id": "Q01",
+          "query_type": "pathway_overview",
+          "question": "What are the initial management steps for a patient with malignant germ cell tumors based on fertility desires?",
+          "seed_node_ids": [
+            "LCOC12_F01",
+            "LCOC12_F03",
+            "LCOC12_F06"
+          ],
+          "expected_focus": "Overview of initial surgery pathways split by fertility desire status."
+        },
+        {
+          "query_id": "Q02",
+          "query_type": "disease_to_treatment",
+          "question": "For a patient with dysgerminoma or grade 1 immature teratoma who desires fertility preservation, what surgical approach is recommended?",
+          "seed_node_ids": [
+            "LCOC12_F11",
+            "LCOC12_F03",
+            "LCOC12_F04"
+          ],
+          "expected_focus": "Specific treatment recommendation for low-grade histology with fertility desire."
+        },
+        {
+          "query_id": "Q03",
+          "query_type": "evaluation_to_decision",
+          "question": "If imaging is negative but tumor markers are positive in a malignant germ cell tumor case, should observation be considered?",
+          "seed_node_ids": [
+            "LCOC12_F14",
+            "LCOC12_F15"
+          ],
+          "expected_focus": "Decision logic for observation when imaging is negative but markers are elevated."
+        },
+        {
+          "query_id": "Q04",
+          "query_type": "treatment_followup",
+          "question": "What is the monitoring protocol if a patient with negative imaging and negative tumor markers is placed on observation?",
+          "seed_node_ids": [
+            "LCOC12_F16",
+            "LCOC12_F17"
+          ],
+          "expected_focus": "Follow-up details for patients meeting criteria for category 2B observation."
+        },
+        {
+          "query_id": "Q05",
+          "query_type": "biomarker_or_testing",
+          "question": "Which imaging modalities are suggested for evaluating incompletely staged malignant germ cell tumors?",
+          "seed_node_ids": [
+            "LCOC12_F10"
+          ],
+          "expected_focus": "List of acceptable imaging types (CT, MRI, PET) for incomplete staging evaluation."
+        },
+        {
+          "query_id": "Q06",
+          "query_type": "branch_disambiguation",
+          "question": "How does the treatment pathway diverge for mixed histology tumors compared to dysgerminomas regarding chemotherapy versus surgery?",
+          "seed_node_ids": [
+            "LCOC12_F18",
+            "LCOC12_F20"
+          ],
+          "expected_focus": "Differentiation between low-risk and high-risk histology treatment options including chemotherapy referral."
+        },
+        {
+          "query_id": "Q07",
+          "query_type": "page_jump_continuation",
+          "question": "After completing initial staging surgery for a high-risk malignant germ cell tumor, where do I find the subsequent chemotherapy guidelines?",
+          "seed_node_ids": [
+            "LCOC12_F20",
+            "LCOC12_F05"
+          ],
+          "expected_focus": "Navigation to the next page (LCOC-13) for detailed treatment protocols."
+        },
+        {
+          "query_id": "Q08",
+          "query_type": "disease_to_evaluation",
+          "question": "What diagnostic workup is required before deciding on observation for a patient with negative imaging and positive tumor markers?",
+          "seed_node_ids": [
+            "LCOC12_F14",
+            "LCOC12_F15"
+          ],
+          "expected_focus": "Evaluation criteria leading to the decision of observation versus active intervention."
+        },
+        {
+          "query_id": "Q09",
+          "query_type": "monitoring_followup",
+          "question": "Until when should tumor markers be monitored closely if a patient is managed with observation due to isolated marker elevation?",
+          "seed_node_ids": [
+            "LCOC12_F15"
+          ],
+          "expected_focus": "Duration and endpoint of monitoring until normalization of tumor markers."
+        },
+        {
+          "query_id": "Q10",
+          "query_type": "stress_test_partial_support",
+          "question": "A patient has an embryonal carcinoma and desires fertility; can we proceed directly to chemotherapy without prior comprehensive staging surgery given her age?",
+          "seed_node_ids": [
+            "LCOC12_F18",
+            "LCOC12_F20"
+          ],
+          "expected_focus": "Stress test: Page suggests surgery first, then chemo; this query tests if the graph supports skipping surgery for specific subgroups not explicitly listed."
+        }
+      ]
+    },
+    {
+      "page_code": "LCOC-13",
+      "page_title": "PATHOLOGIC DIAGNOSIS / ADJUVANT TREATMENT / MONITORING/FOLLOW-UP / THERAPY FOR RECURRENT/PERSISTENT DISEASE",
+      "queries": [
+        {
+          "query_id": "Q01",
+          "query_type": "pathway_overview",
+          "question": "What are the primary disease conditions and subsequent management pathways outlined on this page for malignant germ cell tumors?",
+          "seed_node_ids": [
+            "LCOC13_F01",
+            "LCOC13_F03"
+          ],
+          "expected_focus": "Overview of initial disease stratification and high-level treatment options."
+        },
+        {
+          "query_id": "Q02",
+          "query_type": "disease_to_treatment",
+          "question": "For a patient with Stage I dysgerminoma or Grade 1 immature teratoma, what is the recommended adjuvant management?",
+          "seed_node_ids": [
+            "LCOC13_F01",
+            "LCOC13_F02"
+          ],
+          "expected_focus": "Identify observation/surveillance as the standard of care for low-risk early-stage disease."
+        },
+        {
+          "query_id": "Q03",
+          "query_type": "disease_to_evaluation",
+          "question": "Which imaging modalities are clinically indicated for evaluating patients with malignant germ cell tumors after initial diagnosis?",
+          "seed_node_ids": [
+            "LCOC13_F05"
+          ],
+          "expected_focus": "List specific imaging types such as C/A/P CT, chest CT, MRI, or PET/CT."
+        },
+        {
+          "query_id": "Q04",
+          "query_type": "evaluation_to_decision",
+          "question": "If a patient has residual tumor on radiographic imaging but normal markers, should biopsy or surgical resection be considered?",
+          "seed_node_ids": [
+            "LCOC13_F08",
+            "LCOC13_F09"
+          ],
+          "expected_focus": "Determine that biopsy or surgical resection is the next step for residual mass with normal markers."
+        },
+        {
+          "query_id": "Q05",
+          "query_type": "treatment_followup",
+          "question": "After confirming a complete clinical response, which pathway page should the clinician reference for continued management?",
+          "seed_node_ids": [
+            "LCOC13_F06",
+            "LCOC13_F07"
+          ],
+          "expected_focus": "Navigate to LCOC-14 for follow-up protocols following complete response."
+        },
+        {
+          "query_id": "Q06",
+          "query_type": "monitoring_followup",
+          "question": "What surveillance strategy is recommended for a patient found to have benign teratoma upon resection?",
+          "seed_node_ids": [
+            "LCOC13_F13",
+            "LCOC13_F15"
+          ],
+          "expected_focus": "Confirm that surveillance (LCOC-B) is the appropriate follow-up for benign teratoma."
+        },
+        {
+          "query_id": "Q07",
+          "query_type": "biomarker_or_testing",
+          "question": "How does the presence of persistently elevated markers combined with definitive residual disease influence the treatment plan?",
+          "seed_node_ids": [
+            "LCOC13_F18",
+            "LCOC13_F17"
+          ],
+          "expected_focus": "Link elevated markers and residual disease to aggressive salvage therapy like TIP or HCT."
+        },
+        {
+          "query_id": "Q08",
+          "query_type": "branch_disambiguation",
+          "question": "If a biopsy reveals necrotic tissue in a residual mass, how should the patient's pathway proceed regarding malignancy confirmation?",
+          "seed_node_ids": [
+            "LCOC13_F11",
+            "LCOC13_F12"
+          ],
+          "expected_focus": "Clarify that necrotic tissue leads to following the path for complete clinical response."
+        },
+        {
+          "query_id": "Q09",
+          "query_type": "page_jump_continuation",
+          "question": "Following chemotherapy for embryonal tumor, what is the next numbered guideline page referenced for managing complete clinical response?",
+          "seed_node_ids": [
+            "LCOC13_F04",
+            "LCOC13_F07"
+          ],
+          "expected_focus": "Identify LCOC-14 as the destination page for post-chemotherapy complete response management."
+        },
+        {
+          "query_id": "Q10",
+          "query_type": "stress_test_partial_support",
+          "question": "A patient presents with Stage II-IV dysgerminoma and a history of prior radiation therapy; what is the recommended chemotherapy regimen given the constraints of this page?",
+          "seed_node_ids": [
+            "LCOC13_F03",
+            "LCOC13_F04"
+          ],
+          "expected_focus": "Identify Chemotherapy as the option while noting the current page does not explicitly detail radiation contraindications or adjustments."
+        }
+      ]
+    },
+    {
+      "page_code": "LCOC-14",
+      "page_title": "MONITORING/FOLLOW-UP AFTER ADJUVANT TREATMENT THERAPY FOR RECURRENT/ PERSISTENT DISEASE",
+      "queries": [
+        {
+          "query_id": "q_01",
+          "query_type": "pathway_overview",
+          "question": "What is the primary purpose of this monitoring page for patients with recurrent or persistent malignant germ cell tumors?",
+          "seed_node_ids": [
+            "LCOC14_F01"
+          ],
+          "expected_focus": "Understand that this page outlines post-adjuvant monitoring and management strategies."
+        },
+        {
+          "query_id": "q_02",
+          "query_type": "disease_to_treatment",
+          "question": "For a patient with any stage embryonal tumor who has achieved a complete clinical response, what is the recommended next step?",
+          "seed_node_ids": [
+            "LCOC14_F01",
+            "LCOC14_F02",
+            "LCOC14_F03"
+          ],
+          "expected_focus": "Identify 'Observe (LCOC-B)' as the management option for complete response."
+        },
+        {
+          "query_id": "q_03",
+          "query_type": "disease_to_evaluation",
+          "question": "If a patient presents with abnormal markers indicating definitive recurrent disease, which evaluation protocol should be referenced?",
+          "seed_node_ids": [
+            "LCOC14_F04",
+            "LCOC14_F08"
+          ],
+          "expected_focus": "Determine that evaluation LCOC-A is required for patients with recurrent disease."
+        },
+        {
+          "query_id": "q_04",
+          "query_type": "evaluation_to_decision",
+          "question": "After evaluating a patient with Stage II-IV dysgerminoma showing incomplete clinical response, what treatment options are available?",
+          "seed_node_ids": [
+            "LCOC14_F01",
+            "LCOC14_F07",
+            "LCOC14_F05"
+          ],
+          "expected_focus": "List second-line chemotherapy, high-dose chemotherapy + HCT, or surgery as options."
+        },
+        {
+          "query_id": "q_05",
+          "query_type": "treatment_followup",
+          "question": "What specific therapies are categorized as category 2B for patients with definitive recurrent disease in this pathway?",
+          "seed_node_ids": [
+            "LCOC14_F04",
+            "LCOC14_F05"
+          ],
+          "expected_focus": "Retrieve details on second-line chemotherapy and high-dose chemotherapy + HCT."
+        },
+        {
+          "query_id": "q_06",
+          "query_type": "page_jump_continuation",
+          "question": "A patient with nongestational choriocarcinoma has had adjuvant therapy; where can I find the detailed monitoring schedule referenced here?",
+          "seed_node_ids": [
+            "LCOC14_F01",
+            "LCOC14_F03"
+          ],
+          "expected_focus": "Navigate to the LCOC-B page for the specific monitoring schedule."
+        },
+        {
+          "query_id": "q_07",
+          "query_type": "monitoring_followup",
+          "question": "How does the follow-up plan differ between a patient with an immature teratoma achieving complete response versus one with abnormal markers?",
+          "seed_node_ids": [
+            "LCOC14_F01",
+            "LCOC14_F02",
+            "LCOC14_F04"
+          ],
+          "expected_focus": "Contrast observation (LCOC-B) for complete response against active treatment/evaluation for recurrence."
+        },
+        {
+          "query_id": "q_08",
+          "query_type": "biomarker_or_testing",
+          "question": "Which specific tumor types listed on this page require monitoring for markers that might indicate definitive recurrent disease?",
+          "seed_node_ids": [
+            "LCOC14_F01",
+            "LCOC14_F04"
+          ],
+          "expected_focus": "Identify embryonal, endodermal sinus, dysgerminoma, immature teratoma, and choriocarcinoma as relevant types."
+        },
+        {
+          "query_id": "q_09",
+          "query_type": "branch_disambiguation",
+          "question": "For a patient with Stage I grade 3 immature teratoma, do we proceed directly to second-line chemotherapy if markers are abnormal, or is there another step first?",
+          "seed_node_ids": [
+            "LCOC14_F01",
+            "LCOC14_F04",
+            "LCOC14_F05",
+            "LCOC14_F08"
+          ],
+          "expected_focus": "Clarify that abnormal markers lead to evaluation (LCOC-A) before deciding on second-line chemotherapy or other interventions."
+        },
+        {
+          "query_id": "q_10",
+          "query_type": "stress_test_partial_support",
+          "question": "A patient with recurrent ovarian carcinoma (non-germ cell origin) presents with abnormal markers; should they receive second-line chemotherapy per this page?",
+          "seed_node_ids": [
+            "LCOC14_F04",
+            "LCOC14_F05"
+          ],
+          "expected_focus": "Stress-test the system to recognize that this page only covers Malignant Germ Cell Tumors, not general ovarian carcinoma."
+        }
+      ]
+    },
+    {
+      "page_code": "LCOC-2",
+      "page_title": "PATHOLOGIC DIAGNOSIS  ADJUVANT TREATMENT  MONITORING/FOLLOW-UP",
+      "queries": [
+        {
+          "query_id": "Q01",
+          "query_type": "pathway_overview",
+          "question": "What are the main components covered on this page regarding the management of ovarian carcinosarcoma?",
+          "seed_node_ids": [
+            "LCOC2_F01"
+          ],
+          "expected_focus": "Overview of adjuvant therapy, monitoring, and follow-up scope for MMMTs."
+        },
+        {
+          "query_id": "Q02",
+          "query_type": "disease_to_treatment",
+          "question": "For a patient with Stage I ovarian carcinosarcoma, what is the preferred systemic chemotherapy regimen?",
+          "seed_node_ids": [
+            "LCOC2_F03",
+            "LCOC2_F02"
+          ],
+          "expected_focus": "Identification of IV paclitaxel/carboplatin as the preferred option for Stage I."
+        },
+        {
+          "query_id": "Q03",
+          "query_type": "disease_to_evaluation",
+          "question": "Which stage categories are explicitly distinguished for treatment planning in this section?",
+          "seed_node_ids": [
+            "LCOC2_F03",
+            "LCOC2_F05"
+          ],
+          "expected_focus": "Differentiation between Stage I and Stage II-IV disease groups."
+        },
+        {
+          "query_id": "Q04",
+          "query_type": "evaluation_to_decision",
+          "question": "If a patient has Stage II-IV disease, does the guideline recommend a different systemic therapy approach compared to Stage I?",
+          "seed_node_ids": [
+            "LCOC2_F05",
+            "LCOC2_F02"
+          ],
+          "expected_focus": "Comparison of treatment pathways based on stage severity."
+        },
+        {
+          "query_id": "Q05",
+          "query_type": "treatment_followup",
+          "question": "Where should I look for guidance on monitoring and recurrence therapy after completing primary treatment?",
+          "seed_node_ids": [
+            "LCOC2_F04"
+          ],
+          "expected_focus": "Navigation to the Monitoring/Follow-up and Recurrence therapy page (OV-6)."
+        },
+        {
+          "query_id": "Q06",
+          "query_type": "monitoring_followup",
+          "question": "Does this page provide specific details on tumor testing protocols during the follow-up phase?",
+          "seed_node_ids": [
+            "LCOC2_F04"
+          ],
+          "expected_focus": "Confirmation that tumor testing details are located on a subsequent page (OV-6)."
+        },
+        {
+          "query_id": "Q07",
+          "query_type": "biomarker_or_testing",
+          "question": "How should maintenance therapy be considered for a patient known to have a BRCA1/2 mutation after primary treatment?",
+          "seed_node_ids": [
+            "LCOC2_F06"
+          ],
+          "expected_focus": "Recommendation to consider maintenance therapy referencing page OV-5."
+        },
+        {
+          "query_id": "Q08",
+          "query_type": "branch_disambiguation",
+          "question": "Are there alternative systemic therapies listed for ovarian carcinosarcoma if the preferred paclitaxel/carboplatin regimen is not suitable?",
+          "seed_node_ids": [
+            "LCOC2_F02"
+          ],
+          "expected_focus": "Identification of 'Other systemic therapy' options referenced by stage."
+        },
+        {
+          "query_id": "Q09",
+          "query_type": "page_jump_continuation",
+          "question": "I need to proceed from the adjuvant treatment recommendations to the specific monitoring schedule; which page number should I reference?",
+          "seed_node_ids": [
+            "LCOC2_F04"
+          ],
+          "expected_focus": "Retrieval of the target page code OV-6 for follow-up procedures."
+        },
+        {
+          "query_id": "Q10",
+          "query_type": "stress_test_partial_support",
+          "question": "A patient with Stage III disease and a BRCA1 mutation asks about immediate maintenance therapy starting today without finishing surgery. What does this page say?",
+          "seed_node_ids": [
+            "LCOC2_F05",
+            "LCOC2_F06"
+          ],
+          "expected_focus": "Partial support: The page mentions maintenance for BRCA mutations but implies post-primary therapy context, lacking detail on pre-surgery initiation."
+        }
+      ]
+    },
+    {
+      "page_code": "LCOC-3",
+      "page_title": "Clear cell carcinoma of the ovary",
+      "queries": [
+        {
+          "query_id": "q01",
+          "query_type": "pathway_overview",
+          "question": "What are the primary adjuvant treatment and monitoring recommendations for clear cell carcinoma of the ovary outlined in this guideline?",
+          "seed_node_ids": [
+            "LCOC3_F01"
+          ],
+          "expected_focus": "Overview of adjuvant treatment and follow-up scope for clear cell carcinoma."
+        },
+        {
+          "query_id": "q02",
+          "query_type": "disease_to_treatment",
+          "question": "For a patient with Stage II-IV clear cell carcinoma, what is the recommended IV platinum-based therapy approach?",
+          "seed_node_ids": [
+            "LCOC3_N02",
+            "LCOC3_F06"
+          ],
+          "expected_focus": "Treatment recommendation for advanced stage (II-IV) disease."
+        },
+        {
+          "query_id": "q03",
+          "query_type": "evaluation_to_decision",
+          "question": "If a patient has Stage IA/IB/IC1 clear cell carcinoma, should we proceed with observation or initiate IV platinum-based therapy?",
+          "seed_node_ids": [
+            "LCOC3_N01",
+            "LCOC3_F03"
+          ],
+          "expected_focus": "Decision between observation and chemotherapy for early-stage disease."
+        },
+        {
+          "query_id": "q04",
+          "query_type": "treatment_followup",
+          "question": "After completing systemic therapy for clear cell carcinoma, where can I find the specific regimens referenced in this page?",
+          "seed_node_ids": [
+            "LCOC3_F08"
+          ],
+          "expected_focus": "Reference to primary regimens on page OV-C."
+        },
+        {
+          "query_id": "q05",
+          "query_type": "page_jump_continuation",
+          "question": "I need to review the detailed monitoring schedule and recurrence therapy options; which page number should I navigate to next?",
+          "seed_node_ids": [
+            "LCOC3_F04"
+          ],
+          "expected_focus": "Navigation to Monitoring/Follow-up and Recurrence therapy page (OV-6)."
+        },
+        {
+          "query_id": "q06",
+          "query_type": "monitoring_followup",
+          "question": "Does this section outline specific tumor testing requirements as part of the monitoring plan for clear cell carcinoma?",
+          "seed_node_ids": [
+            "LCOC3_F04"
+          ],
+          "expected_focus": "Confirmation of tumor testing inclusion in the monitoring/follow-up section."
+        },
+        {
+          "query_id": "q07",
+          "query_type": "biomarker_or_testing",
+          "question": "If a patient with clear cell carcinoma is known to have a BRCA1/2 mutation, what maintenance therapy consideration is mentioned?",
+          "seed_node_ids": [
+            "LCOC3_F09"
+          ],
+          "expected_focus": "Maintenance therapy recommendation post-primary therapy for BRCA1/2 mutation carriers."
+        },
+        {
+          "query_id": "q08",
+          "query_type": "branch_disambiguation",
+          "question": "How does the treatment differ for Stage IC2-IC3 compared to Stage IA/IB/IC1 in clear cell carcinoma?",
+          "seed_node_ids": [
+            "LCOC3_N03",
+            "LCOC3_N01"
+          ],
+          "expected_focus": "Differentiation of treatment paths based on sub-stages of clear cell carcinoma."
+        },
+        {
+          "query_id": "q09",
+          "query_type": "stress_test_partial_support",
+          "question": "A patient with Stage III clear cell carcinoma also presents with a TP53 mutation; does this page recommend a specific targeted therapy beyond standard platinum-based treatment?",
+          "seed_node_ids": [
+            "LCOC3_N02",
+            "LCOC3_F06"
+          ],
+          "expected_focus": "Check if TP53 mutation triggers a specific alternative therapy not listed in the current page context."
+        },
+        {
+          "query_id": "q10",
+          "query_type": "disease_to_evaluation",
+          "question": "For patients transitioning from initial treatment to follow-up, what key components like tumor testing are highlighted in the guidelines?",
+          "seed_node_ids": [
+            "LCOC3_F04"
+          ],
+          "expected_focus": "Identification of evaluation components such as tumor testing in the follow-up phase."
+        }
+      ]
+    },
+    {
+      "page_code": "LCOC-4",
+      "page_title": "Mucinous Neoplasms of the Ovary",
+      "queries": [
+        {
+          "query_id": "q_01",
+          "query_type": "pathway_overview",
+          "question": "What is the scope of this NCCN guideline page regarding mucinous neoplasms of the ovary?",
+          "seed_node_ids": [
+            "LCOC4_F01"
+          ],
+          "expected_focus": "Retrieve the summary of workup, adjuvant treatment, and monitoring for stages I–IV."
+        },
+        {
+          "query_id": "q_02",
+          "query_type": "disease_to_evaluation",
+          "question": "For a patient with newly diagnosed mucinous ovarian neoplasm who has not yet been evaluated, what GI workup and tumor markers are recommended?",
+          "seed_node_ids": [
+            "LCOC4_F02"
+          ],
+          "expected_focus": "Identify required GI evaluation and CEA/CA 19-9 testing."
+        },
+        {
+          "query_id": "q_03",
+          "query_type": "evaluation_to_decision",
+          "question": "If a patient presents with Stage IA mucinous carcinoma that is expansile on pathology, what is the recommended management?",
+          "seed_node_ids": [
+            "LCOC4_F03",
+            "LCOC4_F04"
+          ],
+          "expected_focus": "Determine if observation is sufficient for expansile Stage IA disease."
+        },
+        {
+          "query_id": "q_04",
+          "query_type": "branch_disambiguation",
+          "question": "How does the treatment recommendation differ between infiltrative versus expansile histology in Stage IB mucinous carcinoma?",
+          "seed_node_ids": [
+            "LCOC4_F08",
+            "LCOC4_F06",
+            "LCOC4_F11"
+          ],
+          "expected_focus": "Compare observation vs systemic therapy based on infiltrative/expansile subtype."
+        },
+        {
+          "query_id": "q_05",
+          "query_type": "disease_to_treatment",
+          "question": "What systemic therapy regimen is indicated for Stage IC mucinous carcinoma with infiltrative features?",
+          "seed_node_ids": [
+            "LCOC4_F13",
+            "LCOC4_F16"
+          ],
+          "expected_focus": "Identify the specific systemic therapy reference (OV-C, 5 of 12)."
+        },
+        {
+          "query_id": "q_06",
+          "query_type": "biomarker_or_testing",
+          "question": "Which serum biomarkers should be measured as part of the initial workup for mucinous ovarian neoplasms?",
+          "seed_node_ids": [
+            "LCOC4_F02"
+          ],
+          "expected_focus": "List CEA and CA 19-9 as recommended markers."
+        },
+        {
+          "query_id": "q_07",
+          "query_type": "treatment_followup",
+          "question": "After completing initial management for early-stage mucinous carcinoma, where should the clinician look for recurrence therapy guidelines?",
+          "seed_node_ids": [
+            "LCOC4_F22"
+          ],
+          "expected_focus": "Locate the page jump to Monitoring/Follow-up and Recurrence therapy (OV-6)."
+        },
+        {
+          "query_id": "q_08",
+          "query_type": "monitoring_followup",
+          "question": "Does the current page provide specific instructions for long-term monitoring or follow-up protocols?",
+          "seed_node_ids": [
+            "LCOC4_F22"
+          ],
+          "expected_focus": "Confirm that detailed monitoring is referenced via a link to another section rather than listed here."
+        },
+        {
+          "query_id": "q_09",
+          "query_type": "stress_test_partial_support",
+          "question": "A patient with Stage II mucinous carcinoma and BRCA1 mutation is being considered for treatment; what is the specific recommendation here?",
+          "seed_node_ids": [
+            "LCOC4_F18"
+          ],
+          "expected_focus": "Note that while systemic therapy is recommended, BRCA status is not explicitly addressed in this specific node text."
+        },
+        {
+          "query_id": "q_10",
+          "query_type": "page_jump_continuation",
+          "question": "Where can I find the details for recurrence therapy and tumor testing after the initial treatment phase for these patients?",
+          "seed_node_ids": [
+            "LCOC4_F22"
+          ],
+          "expected_focus": "Direct to the OV-6 page for Monitoring/Follow-up and Recurrence therapy."
+        }
+      ]
+    },
+    {
+      "page_code": "LCOC-5",
+      "page_title": "Grade 1 Endometrioid Carcinoma",
+      "queries": [
+        {
+          "query_id": "q_01",
+          "query_type": "pathway_overview",
+          "question": "What are the recommended management strategies for patients with Grade 1 endometrioid carcinoma across stages IA through IV?",
+          "seed_node_ids": [
+            "LCOC5_F01",
+            "LCOC5_F02",
+            "LCOC5_F09"
+          ],
+          "expected_focus": "Overview of treatment options (observation vs systemic therapy) stratified by stage."
+        },
+        {
+          "query_id": "q_02",
+          "query_type": "disease_to_treatment",
+          "question": "For a patient with Stage IA or IB Grade 1 endometrioid carcinoma, is observation an appropriate adjuvant strategy?",
+          "seed_node_ids": [
+            "LCOC5_F02",
+            "LCOC5_F03"
+          ],
+          "expected_focus": "Confirmation that observation is the primary recommendation for early-stage disease."
+        },
+        {
+          "query_id": "q_03",
+          "query_type": "evaluation_to_decision",
+          "question": "If a patient has Stage IC Grade 1 endometrioid carcinoma, what are the alternative options between observation and systemic therapy?",
+          "seed_node_ids": [
+            "LCOC5_F05",
+            "LCOC5_F06"
+          ],
+          "expected_focus": "Identification of observation (category 2B) versus chemotherapy as viable paths."
+        },
+        {
+          "query_id": "q_04",
+          "query_type": "treatment_followup",
+          "question": "After initial treatment for Stage IC disease, can maintenance letrozole be considered as part of the follow-up plan?",
+          "seed_node_ids": [
+            "LCOC5_F07",
+            "LCOC5_F08"
+          ],
+          "expected_focus": "Availability of hormonal therapy or letrozole as category 2B maintenance options."
+        },
+        {
+          "query_id": "q_05",
+          "query_type": "monitoring_followup",
+          "question": "Where should I look for the detailed monitoring schedule and recurrence therapy guidelines after completing adjuvant treatment for this condition?",
+          "seed_node_ids": [
+            "LCOC5_F04"
+          ],
+          "expected_focus": "Navigation to the Monitoring/Follow-up page (OV-6)."
+        },
+        {
+          "query_id": "q_06",
+          "query_type": "biomarker_or_testing",
+          "question": "Does the current pathway for Grade 1 endometrioid carcinoma include specific tumor testing requirements during the follow-up phase?",
+          "seed_node_ids": [
+            "LCOC5_F04"
+          ],
+          "expected_focus": "Reference to tumor testing included in the monitoring section."
+        },
+        {
+          "query_id": "q_07",
+          "query_type": "branch_disambiguation",
+          "question": "For advanced stage (II-IV) Grade 1 endometrioid carcinoma, is there an option to observe without immediate systemic therapy, and if so, under what conditions?",
+          "seed_node_ids": [
+            "LCOC5_F11",
+            "LCOC5_F10"
+          ],
+          "expected_focus": "Clarification on the choice between observation/maintenance hormonal therapy versus standard systemic therapy."
+        },
+        {
+          "query_id": "q_08",
+          "query_type": "page_jump_continuation",
+          "question": "Once the initial adjuvant treatment for Grade 1 endometrioid carcinoma is decided, which guideline page covers the subsequent long-term surveillance and potential recurrence treatments?",
+          "seed_node_ids": [
+            "LCOC5_F04"
+          ],
+          "expected_focus": "Transition to page OV-6 for monitoring and recurrence therapy details."
+        },
+        {
+          "query_id": "q_09",
+          "query_type": "stress_test_partial_support",
+          "question": "A patient with Stage IC Grade 1 endometrioid carcinoma also has a known BRCA mutation; does this page recommend a specific PARP inhibitor regimen over standard chemotherapy?",
+          "seed_node_ids": [
+            "LCOC5_F05",
+            "LCOC5_F06"
+          ],
+          "expected_focus": "Assessment of whether the page supports adding BRCA-specific targeted therapy not explicitly listed in the node text."
+        },
+        {
+          "query_id": "q_10",
+          "query_type": "disease_to_evaluation",
+          "question": "What distinguishes the staging criteria that would move a Grade 1 endometrioid carcinoma patient from the 'Stage IA-IB' node to the 'Stage IC' node regarding surgical findings?",
+          "seed_node_ids": [
+            "LCOC5_F02",
+            "LCOC5_F05"
+          ],
+          "expected_focus": "Differentiation between early stages based on pathological evaluation criteria implied by the stage nodes."
+        }
+      ]
+    },
+    {
+      "page_code": "LCOC-6",
+      "page_title": "ADJUVANT TREATMENT",
+      "queries": [
+        {
+          "query_id": "Q01",
+          "query_type": "pathway_overview",
+          "question": "What are the adjuvant treatment options outlined for low-grade serous carcinoma by stage on this page?",
+          "seed_node_ids": [
+            "LCOC6_F01",
+            "LCOC6_F02",
+            "LCOC6_F09"
+          ],
+          "expected_focus": "A summary of treatment pathways stratified by stage (IA-IB, IC, II-IV)."
+        },
+        {
+          "query_id": "Q02",
+          "query_type": "disease_to_treatment",
+          "question": "For a patient with Stage IA-IB low-grade serous carcinoma, is observation considered an appropriate adjuvant strategy?",
+          "seed_node_ids": [
+            "LCOC6_F02",
+            "LCOC6_F03"
+          ],
+          "expected_focus": "Confirmation that observation is the recommended option for early-stage disease."
+        },
+        {
+          "query_id": "Q03",
+          "query_type": "disease_to_evaluation",
+          "question": "If a patient has Stage IC low-grade serous carcinoma, what systemic therapy options are available if observation is not chosen?",
+          "seed_node_ids": [
+            "LCOC6_F05",
+            "LCOC6_F06"
+          ],
+          "expected_focus": "Identification of chemotherapy or other systemic therapies linked to OV-C guidelines."
+        },
+        {
+          "query_id": "Q04",
+          "query_type": "evaluation_to_decision",
+          "question": "What hormonal therapy categories are recommended for adjuvant management in Stage IC or Stage II-IV low-grade serous carcinoma?",
+          "seed_node_ids": [
+            "LCOC6_F07",
+            "LCOC6_F08",
+            "LCOC6_F11",
+            "LCOC6_F12"
+          ],
+          "expected_focus": "Details on maintenance letrozole and other category 2B hormonal therapies."
+        },
+        {
+          "query_id": "Q05",
+          "query_type": "treatment_followup",
+          "question": "After completing adjuvant treatment for low-grade serous carcinoma, where should the clinician look for monitoring protocols for recurrent disease?",
+          "seed_node_ids": [
+            "LCOC6_F04"
+          ],
+          "expected_focus": "Navigation to the next page regarding monitoring for recurrent disease (LCOC-7)."
+        },
+        {
+          "query_id": "Q06",
+          "query_type": "monitoring_followup",
+          "question": "Does this page provide specific follow-up schedules for patients who are observed after Stage IA-IB resection?",
+          "seed_node_ids": [
+            "LCOC6_F02",
+            "LCOC6_F03"
+          ],
+          "expected_focus": "Clarification that detailed monitoring schedules are located on the subsequent page."
+        },
+        {
+          "query_id": "Q07",
+          "query_type": "biomarker_or_testing",
+          "question": "Are there specific biomarkers required before initiating maintenance letrozole for low-grade serous carcinoma according to this page?",
+          "seed_node_ids": [
+            "LCOC6_F07",
+            "LCOC6_F11"
+          ],
+          "expected_focus": "Assessment of whether biomarker testing is mentioned as a prerequisite for hormonal therapy."
+        },
+        {
+          "query_id": "Q08",
+          "query_type": "branch_disambiguation",
+          "question": "How does the adjuvant treatment recommendation differ between Stage IC and Stage II-IV low-grade serous carcinoma regarding chemotherapy?",
+          "seed_node_ids": [
+            "LCOC6_F05",
+            "LCOC6_F06",
+            "LCOC6_F09",
+            "LCOC6_F10"
+          ],
+          "expected_focus": "Comparison of chemotherapy recommendations across different stages."
+        },
+        {
+          "query_id": "Q09",
+          "query_type": "page_jump_continuation",
+          "question": "I need to review the follow-up plan for a patient who develops recurrence after adjuvant therapy; which guideline page covers this?",
+          "seed_node_ids": [
+            "LCOC6_F04"
+          ],
+          "expected_focus": "Identification of the LCOC-7 page for recurrent disease management."
+        },
+        {
+          "query_id": "Q10",
+          "query_type": "stress_test_partial_support",
+          "question": "For a patient with Stage IB low-grade serous carcinoma who is BRCA-positive, should we consider PARP inhibitors instead of just observation?",
+          "seed_node_ids": [
+            "LCOC6_F02",
+            "LCOC6_F03"
+          ],
+          "expected_focus": "Testing if the graph supports BRCA-specific interventions like PARP inhibitors, which are likely absent from this specific adjuvant page."
+        }
+      ]
+    },
+    {
+      "page_code": "LCOC-7",
+      "page_title": "MONITORING/FOLLOW-UP FOR RECURRENCE   RECURRENCE THERAPY",
+      "queries": [
+        {
+          "query_id": "q01",
+          "query_type": "pathway_overview",
+          "question": "What are the recommended surveillance schedules and initial workup components for a patient with low-grade serous carcinoma after completing primary treatment?",
+          "seed_node_ids": [
+            "LCOC7_F01"
+          ],
+          "expected_focus": "Retrieve the specific visit frequency intervals and list of monitoring tests (imaging, labs, exams) defined in the evaluation node."
+        },
+        {
+          "query_id": "q02",
+          "query_type": "disease_to_treatment",
+          "question": "For a patient presenting with recurrent low-grade serous carcinoma who has not received prior chemotherapy, what systemic therapy options are listed on this page?",
+          "seed_node_ids": [
+            "LCOC7_F02",
+            "LCOC7_F03"
+          ],
+          "expected_focus": "Identify hormonal therapy, chemotherapy, and observation as recurrence treatment options from the treatment node."
+        },
+        {
+          "query_id": "q03",
+          "query_type": "evaluation_to_decision",
+          "question": "If a patient's CA-125 was elevated at diagnosis, how should tumor marker monitoring be handled during the follow-up period according to these guidelines?",
+          "seed_node_ids": [
+            "LCOC7_F01"
+          ],
+          "expected_focus": "Confirm that CA-125 or other markers should be monitored only if initially elevated."
+        },
+        {
+          "query_id": "q04",
+          "query_type": "treatment_followup",
+          "question": "A patient with platinum-sensitive recurrent disease is being considered for systemic therapy. Which NCCN pathway page does this guideline refer to for further management details?",
+          "seed_node_ids": [
+            "LCOC7_F03"
+          ],
+          "expected_focus": "Extract the cross-reference to OV-C (8 of 12) for platinum-sensitive disease management."
+        },
+        {
+          "query_id": "q05",
+          "query_type": "page_jump_continuation",
+          "question": "Where should I look for detailed systemic therapy recommendations for a patient with platinum-resistant recurrent low-grade serous carcinoma?",
+          "seed_node_ids": [
+            "LCOC7_F03"
+          ],
+          "expected_focus": "Identify the reference to OV-C (9 of 12) as the continuation path for platinum-resistant cases."
+        },
+        {
+          "query_id": "q06",
+          "query_type": "monitoring_followup",
+          "question": "After the first two years of surveillance, what is the recommended frequency for physical examinations and clinic visits for a survivor of low-grade serous carcinoma?",
+          "seed_node_ids": [
+            "LCOC7_F01"
+          ],
+          "expected_focus": "Determine the transition from every 2-4 months to every 3-6 months for years 3-5, then annually."
+        },
+        {
+          "query_id": "q07",
+          "query_type": "biomarker_or_testing",
+          "question": "Is tumor molecular testing recommended for all patients during the surveillance phase, even if they were previously tested?",
+          "seed_node_ids": [
+            "LCOC7_F01"
+          ],
+          "expected_focus": "Clarify that molecular testing is indicated if it has not been done previously."
+        },
+        {
+          "query_id": "q08",
+          "query_type": "branch_disambiguation",
+          "question": "What are the distinct pathways for managing recurrent low-grade serous carcinoma based on whether the patient is platinum-sensitive versus platinum-resistant?",
+          "seed_node_ids": [
+            "LCOC7_F03"
+          ],
+          "expected_focus": "Differentiate between the referral to OV-C (8 of 12) for sensitive disease and OV-C (9 of 12) for resistant disease."
+        },
+        {
+          "query_id": "q09",
+          "query_type": "stress_test_partial_support",
+          "question": "A patient with recurrent low-grade serous carcinoma has developed severe fatigue and anemia; should we immediately order a PET/MRI or rely solely on CBC and chemistry profiles?",
+          "seed_node_ids": [
+            "LCOC7_F01",
+            "LCOC7_F02"
+          ],
+          "expected_focus": "Assess if the current page supports immediate advanced imaging without clinical indication or if CBC/chemistry is sufficient per the 'as clinically indicated' clause."
+        },
+        {
+          "query_id": "q10",
+          "query_type": "disease_to_evaluation",
+          "question": "Does the surveillance protocol include a referral for genetic risk evaluation, and under what circumstances should this occur?",
+          "seed_node_ids": [
+            "LCOC7_F01"
+          ],
+          "expected_focus": "Confirm that referral is recommended if not previously performed during the initial workup."
+        }
+      ]
+    },
+    {
+      "page_code": "LCOC-8",
+      "page_title": "PATHOLOGIC DIAGNOSIS – ADJUVANT TREATMENT",
+      "queries": [
+        {
+          "query_id": "q01",
+          "query_type": "pathway_overview",
+          "question": "What are the primary adjuvant management pathways for ovarian serous borderline epithelial tumors (LMP) after surgical resection?",
+          "seed_node_ids": [
+            "LCOC8_F01",
+            "LCOC8_F02",
+            "LCOC8_F03"
+          ],
+          "expected_focus": "Overview of observation versus further evaluation based on resection status and presence of low-grade serous carcinoma."
+        },
+        {
+          "query_id": "q02",
+          "query_type": "disease_to_treatment",
+          "question": "For a patient with prior complete surgical resection of an LMP tumor without low-grade serous carcinoma, is observation considered an appropriate adjuvant strategy?",
+          "seed_node_ids": [
+            "LCOC8_F02",
+            "LCOC8_F03",
+            "LCOC8_F04"
+          ],
+          "expected_focus": "Confirmation that observation is the recommended treatment for complete resection without malignancy."
+        },
+        {
+          "query_id": "q03",
+          "query_type": "evaluation_to_decision",
+          "question": "If pathology reveals low-grade serous carcinoma in addition to the borderline component, what does the guideline recommend for adjuvant management?",
+          "seed_node_ids": [
+            "LCOC8_F06",
+            "LCOC8_F07"
+          ],
+          "expected_focus": "Identification of the pathway jump to LCOC-6 for adjuvant options when low-grade serous carcinoma is present."
+        },
+        {
+          "query_id": "q04",
+          "query_type": "treatment_followup",
+          "question": "After initiating observation for a completely resected LMP tumor, where should the clinician look for specific monitoring schedules?",
+          "seed_node_ids": [
+            "LCOC8_F04",
+            "LCOC8_F05"
+          ],
+          "expected_focus": "Direction to the Monitoring/Follow-up page (LCOC-10) for surveillance details."
+        },
+        {
+          "query_id": "q05",
+          "query_type": "page_jump_continuation",
+          "question": "A patient had incomplete surgical resection of an LMP tumor. Which subsequent page outlines the next steps for this scenario?",
+          "seed_node_ids": [
+            "LCOC8_F08",
+            "LCOC8_F09"
+          ],
+          "expected_focus": "Navigation to page LCOC-9 for management of incomplete resection."
+        },
+        {
+          "query_id": "q06",
+          "query_type": "branch_disambiguation",
+          "question": "How does the presence or absence of low-grade serous carcinoma alter the immediate adjuvant treatment recommendation following complete resection?",
+          "seed_node_ids": [
+            "LCOC8_F03",
+            "LCOC8_F06",
+            "LCOC8_F04",
+            "LCOC8_F07"
+          ],
+          "expected_focus": "Distinction between observing the patient if no carcinoma is present versus referring to another page if carcinoma is found."
+        },
+        {
+          "query_id": "q07",
+          "query_type": "biomarker_or_testing",
+          "question": "Does the current page specify any specific biomarkers required to distinguish between LMP and low-grade serous carcinoma before deciding on adjuvant therapy?",
+          "seed_node_ids": [
+            "LCOC8_F01",
+            "LCOC8_F03",
+            "LCOC8_F06"
+          ],
+          "expected_focus": "Clarification that the decision relies on pathological diagnosis rather than specific biomarkers listed on this page."
+        },
+        {
+          "query_id": "q08",
+          "query_type": "stress_test_partial_support",
+          "question": "A patient with prior complete resection of LMP has elevated CA-125 levels but no evidence of recurrence on imaging; should chemotherapy be started immediately?",
+          "seed_node_ids": [
+            "LCOC8_F02",
+            "LCOC8_F03",
+            "LCOC8_F04"
+          ],
+          "expected_focus": "Stress test: The page supports observation but does not explicitly address isolated CA-125 elevation without radiographic recurrence."
+        },
+        {
+          "query_id": "q09",
+          "query_type": "monitoring_followup",
+          "question": "Once the decision to observe is made for a low malignant potential tumor, are there specific follow-up intervals defined on this page?",
+          "seed_node_ids": [
+            "LCOC8_F04",
+            "LCOC8_F05"
+          ],
+          "expected_focus": "Indication that detailed monitoring protocols are located on the linked follow-up page (LCOC-10), not this one."
+        },
+        {
+          "query_id": "q10",
+          "query_type": "disease_to_evaluation",
+          "question": "What is the recommended action if the initial surgery was incomplete for an ovarian serous borderline epithelial tumor?",
+          "seed_node_ids": [
+            "LCOC8_F08",
+            "LCOC8_F09"
+          ],
+          "expected_focus": "Identification of the referral to page LCOC-9 for managing incomplete resection scenarios."
+        }
+      ]
+    },
+    {
+      "page_code": "LCOC-9",
+      "page_title": "PATHOLOGIC DIAGNOSIS / ADJUVANT TREATMENT",
+      "queries": [
+        {
+          "query_id": "q01",
+          "query_type": "pathway_overview",
+          "question": "What is the primary clinical scenario addressed on this page for ovarian serous borderline epithelial tumors?",
+          "seed_node_ids": [
+            "LCOC9_F01"
+          ],
+          "expected_focus": "Identify the scope of patients with incomplete staging or tumor reductive surgery."
+        },
+        {
+          "query_id": "q02",
+          "query_type": "disease_to_evaluation",
+          "question": "For a patient with an ovarian serous borderline tumor and incomplete surgical staging, what imaging modalities are recommended if not previously performed?",
+          "seed_node_ids": [
+            "LCOC9_F01",
+            "LCOC9_F02"
+          ],
+          "expected_focus": "Retrieve specific imaging options like C/A/P CT, chest CT, MRI, or PET/CT."
+        },
+        {
+          "query_id": "q03",
+          "query_type": "evaluation_to_decision",
+          "question": "If residual disease is suspected after the initial procedure or on imaging, what surgical interventions are indicated?",
+          "seed_node_ids": [
+            "LCOC9_F03",
+            "LCOC9_F04"
+          ],
+          "expected_focus": "Determine the recommendation for completion surgery including contralateral USO and hysterectomy."
+        },
+        {
+          "query_id": "q04",
+          "query_type": "disease_to_treatment",
+          "question": "What fertility-sparing surgical options are available for a patient desiring future fertility who has residual disease?",
+          "seed_node_ids": [
+            "LCOC9_F03",
+            "LCOC9_F05"
+          ],
+          "expected_focus": "Identify fertility-sparing surgery combined with resection of residual disease."
+        },
+        {
+          "query_id": "q05",
+          "query_type": "branch_disambiguation",
+          "question": "How does the management differ between a patient with no residual disease versus one with suspected residual disease?",
+          "seed_node_ids": [
+            "LCOC9_F14",
+            "LCOC9_F03"
+          ],
+          "expected_focus": "Contrast observation (for no residual disease) against completion or fertility-sparing surgery (for suspected residual)."
+        },
+        {
+          "query_id": "q06",
+          "query_type": "biomarker_or_testing",
+          "question": "What final pathology outcomes are considered after the initial surgical procedure in this pathway?",
+          "seed_node_ids": [
+            "LCOC9_F07",
+            "LCOC9_F08",
+            "LCOC9_F09",
+            "LCOC9_F10"
+          ],
+          "expected_focus": "List the possible final diagnoses: borderline, low-grade serous carcinoma, or high-grade serous."
+        },
+        {
+          "query_id": "q07",
+          "query_type": "treatment_followup",
+          "question": "If the final pathology confirms a borderline tumor, where should the patient be directed for next steps?",
+          "seed_node_ids": [
+            "LCOC9_F08",
+            "LCOC9_F11"
+          ],
+          "expected_focus": "Navigate to the Monitoring/Follow-up section on LCOC-10."
+        },
+        {
+          "query_id": "q08",
+          "query_type": "page_jump_continuation",
+          "question": "Which guideline page covers the monitoring and follow-up protocols for these patients after pathologic diagnosis?",
+          "seed_node_ids": [
+            "LCOC9_F11",
+            "LCOC9_F16"
+          ],
+          "expected_focus": "Confirm the jump to LCOC-10 for monitoring/follow-up."
+        },
+        {
+          "query_id": "q09",
+          "query_type": "stress_test_partial_support",
+          "question": "A patient with a borderline tumor and elevated CA-125 levels but no visible residual disease on CT—should they undergo chemotherapy based on this page?",
+          "seed_node_ids": [
+            "LCOC9_F14",
+            "LCOC9_F15"
+          ],
+          "expected_focus": "Test partial support; the page suggests observation but does not explicitly address chemotherapy for borderline tumors or CA-125 elevation in this context."
+        },
+        {
+          "query_id": "q10",
+          "query_type": "monitoring_followup",
+          "question": "Are there any alternative pathway jumps listed for cases that might be misdiagnosed as high-grade serous carcinoma?",
+          "seed_node_ids": [
+            "LCOC9_F10",
+            "LCOC9_F13"
+          ],
+          "expected_focus": "Identify the jump to OV-4 for potential high-grade serous carcinoma management."
+        }
+      ]
+    },
+    {
+      "page_code": "OV-1",
+      "page_title": "Clinical Presentation, Workup, Clinical Stage, and Primary Treatment",
+      "queries": [
+        {
+          "query_id": "q001",
+          "query_type": "pathway_overview",
+          "question": "What is the scope of this NCCN page regarding epithelial ovarian cancer management?",
+          "seed_node_ids": [
+            "OV1_F14"
+          ],
+          "expected_focus": "Summary of initial presentation, workup, staging, and primary treatment pathways."
+        },
+        {
+          "query_id": "q002",
+          "query_type": "disease_to_evaluation",
+          "question": "A patient presents with bloating, pelvic pain, and urinary urgency. What diagnostic evaluations are recommended?",
+          "seed_node_ids": [
+            "OV1_N01",
+            "OV1_N02"
+          ],
+          "expected_focus": "List of recommended physical exams, imaging, labs, and specialist referrals for symptomatic patients."
+        },
+        {
+          "query_id": "q003",
+          "query_type": "evaluation_to_decision",
+          "question": "If a patient has a suspicious pelvic mass but is deemed a poor surgical candidate, what pathway should be followed?",
+          "seed_node_ids": [
+            "OV1_N06",
+            "OV1_N13"
+          ],
+          "expected_focus": "Identification of the neoadjuvant therapy pathway for non-surgical candidates."
+        },
+        {
+          "query_id": "q004",
+          "query_type": "disease_to_treatment",
+          "question": "For a patient with IA stage disease who desires fertility preservation, what surgical options are listed?",
+          "seed_node_ids": [
+            "OV1_N03",
+            "OV1_N07"
+          ],
+          "expected_focus": "Unilateral salpingo-oophorectomy with comprehensive surgical staging as the preferred option."
+        },
+        {
+          "query_id": "q005",
+          "query_type": "treatment_followup",
+          "question": "After performing a hysterectomy and BSO for a patient where fertility is not desired, what additional procedures might be needed?",
+          "seed_node_ids": [
+            "OV1_N09",
+            "OV1_N05"
+          ],
+          "expected_focus": "Comprehensive staging and debulking as needed based on surgical candidacy."
+        },
+        {
+          "query_id": "q006",
+          "query_type": "biomarker_or_testing",
+          "question": "Which tumor markers or genetic tests are indicated during the initial workup for epithelial ovarian cancer?",
+          "seed_node_ids": [
+            "OV1_N02",
+            "OV1_N10"
+          ],
+          "expected_focus": "CA-125 levels and germline/somatic genetic risk evaluation requirements."
+        },
+        {
+          "query_id": "q007",
+          "query_type": "page_jump_continuation",
+          "question": "Once the initial workup and findings are complete, which page details the pathologic staging?",
+          "seed_node_ids": [
+            "OV1_F15",
+            "OV1_N11"
+          ],
+          "expected_focus": "Navigation to the Pathologic Staging page (OV-4)."
+        },
+        {
+          "query_id": "q008",
+          "query_type": "branch_disambiguation",
+          "question": "Where can I find guidelines if the patient has a less common ovarian cancer subtype rather than epithelial cancer?",
+          "seed_node_ids": [
+            "OV1_N12"
+          ],
+          "expected_focus": "Reference to the LCOC-1 page for less common ovarian cancers."
+        },
+        {
+          "query_id": "q009",
+          "query_type": "monitoring_followup",
+          "question": "Does the initial workup include an assessment of performance status and nutritional status?",
+          "seed_node_ids": [
+            "OV1_N02"
+          ],
+          "expected_focus": "Confirmation that performance and nutritional status evaluation is part of the standard workup."
+        },
+        {
+          "query_id": "q010",
+          "query_type": "stress_test_partial_support",
+          "question": "A patient with a palpable mass also has a known BRCA mutation from a previous breast cancer diagnosis; does this page specify how to integrate that history into the current staging workup?",
+          "seed_node_ids": [
+            "OV1_N01",
+            "OV1_N10"
+          ],
+          "expected_focus": "Partial support: The page mentions obtaining family history and genetic testing but may not detail specific integration protocols for prior known mutations."
+        }
+      ]
+    },
+    {
+      "page_code": "OV-2",
+      "page_title": "POOR SURGICAL CANDIDATE OR LOW LIKELIHOOD OF OPTIMAL CYTOREDUCTION\nNEOADJUVANT THERAPY\nPRIMARY TREATMENT",
+      "queries": [
+        {
+          "query_id": "q_01",
+          "query_type": "pathway_overview",
+          "question": "What is the primary treatment strategy outlined for patients with epithelial ovarian cancer who are poor surgical candidates or have a low likelihood of optimal cytoreduction?",
+          "seed_node_ids": [
+            "OV2_N02"
+          ],
+          "expected_focus": "Overview of neoadjuvant therapy and interval debulking surgery as the primary approach."
+        },
+        {
+          "query_id": "q_02",
+          "query_type": "disease_to_treatment",
+          "question": "Once a patient is confirmed as a poor surgical candidate, what specific therapeutic interventions are recommended before considering surgery?",
+          "seed_node_ids": [
+            "OV2_N02",
+            "OV2_N03"
+          ],
+          "expected_focus": "Recommendation for neoadjuvant therapy and genetic testing."
+        },
+        {
+          "query_id": "q_03",
+          "query_type": "evaluation_to_decision",
+          "question": "Before initiating neoadjuvant therapy, what evaluations must be performed to confirm the diagnosis and assess resection feasibility?",
+          "seed_node_ids": [
+            "OV2_N01",
+            "OV2_N02"
+          ],
+          "expected_focus": "Requirements for gynecologic oncologist evaluation, histologic confirmation, and laparoscopic assessment."
+        },
+        {
+          "query_id": "q_04",
+          "query_type": "treatment_followup",
+          "question": "After completing neoadjuvant therapy, what are the potential next steps if the patient responds well versus if they have stable disease?",
+          "seed_node_ids": [
+            "OV2_N03",
+            "OV2_N05",
+            "OV2_N11",
+            "OV2_N12"
+          ],
+          "expected_focus": "Options for interval debulking surgery or continuing current therapy based on response status."
+        },
+        {
+          "query_id": "q_05",
+          "query_type": "monitoring_followup",
+          "question": "If a patient has progressive disease during neoadjuvant therapy, where should the management pathway direct them next?",
+          "seed_node_ids": [
+            "OV2_N13",
+            "OV2_N09"
+          ],
+          "expected_focus": "Referral to the pathway for persistent disease or recurrence (OV-7)."
+        },
+        {
+          "query_id": "q_06",
+          "query_type": "biomarker_or_testing",
+          "question": "Is genetic risk evaluation and germline/somatic testing required for patients starting neoadjuvant therapy in this pathway?",
+          "seed_node_ids": [
+            "OV2_N03"
+          ],
+          "expected_focus": "Confirmation that genetic testing is part of the neoadjuvant therapy node recommendations."
+        },
+        {
+          "query_id": "q_07",
+          "query_type": "branch_disambiguation",
+          "question": "For a patient undergoing interval debulking surgery, is the use of hyperthermic intraperitoneal chemotherapy (HIPEC) mandatory or optional?",
+          "seed_node_ids": [
+            "OV2_N04",
+            "OV2_N08"
+          ],
+          "expected_focus": "Clarification that HIPEC is an option to consider, not a mandatory step."
+        },
+        {
+          "query_id": "q_08",
+          "query_type": "page_jump_continuation",
+          "question": "Following successful completion of adjuvant therapy after interval debulking, which guideline page covers maintenance therapy options?",
+          "seed_node_ids": [
+            "OV2_N06",
+            "OV2_N07"
+          ],
+          "expected_focus": "Navigation to the Maintenance Therapy page (OV-5)."
+        },
+        {
+          "query_id": "q_09",
+          "query_type": "stress_test_partial_support",
+          "question": "A patient with LCOC (low-grade serous ovarian cancer) presents as a poor surgical candidate; does this page explicitly recommend neoadjuvant therapy for LCOC specifically?",
+          "seed_node_ids": [
+            "OV2_N02",
+            "OV2_N03",
+            "OV2_N14"
+          ],
+          "expected_focus": "Assessment of whether LCOC is explicitly covered under this general neoadjuvant node or requires jumping to LCOC-1."
+        },
+        {
+          "query_id": "q_10",
+          "query_type": "disease_to_evaluation",
+          "question": "What diagnostic criteria define 'low likelihood of optimal cytoreduction' that would trigger the need for neoadjuvant therapy instead of upfront surgery?",
+          "seed_node_ids": [
+            "OV2_N01",
+            "OV2_N02"
+          ],
+          "expected_focus": "Understanding the evaluation process (laparoscopy/biopsy) used to determine surgical candidacy."
+        }
+      ]
+    },
+    {
+      "page_code": "OV-3",
+      "page_title": "DIAGNOSIS BY PREVIOUS SURGERY",
+      "queries": [
+        {
+          "query_id": "q_01",
+          "query_type": "pathway_overview",
+          "question": "What is the primary workflow for a patient referred with newly diagnosed ovarian cancer after a recent surgical procedure?",
+          "seed_node_ids": [
+            "OV3_F01",
+            "OV3_F02"
+          ],
+          "expected_focus": "Overview of initial evaluation steps following referral for post-surgical diagnosis."
+        },
+        {
+          "query_id": "q_02",
+          "query_type": "disease_to_treatment",
+          "question": "If a patient has evidence of residual disease that is suspected to be resectable, what is the immediate treatment option outlined in this pathway?",
+          "seed_node_ids": [
+            "OV3_F09",
+            "OV3_F10"
+          ],
+          "expected_focus": "Recommendation for tumor cytoreductive surgery for resectable residual disease."
+        },
+        {
+          "query_id": "q_03",
+          "query_type": "evaluation_to_decision",
+          "question": "How does the presence of unresectable residual disease change the management pathway compared to resectable disease?",
+          "seed_node_ids": [
+            "OV3_F11",
+            "OV3_F12"
+          ],
+          "expected_focus": "Decision logic shifting from cytoreductive surgery to neoadjuvant therapy for unresectable cases."
+        },
+        {
+          "query_id": "q_04",
+          "query_type": "treatment_followup",
+          "question": "After considering surgical staging for a patient with no residual disease (suspect stage II-IV), where does the pathway direct the next step?",
+          "seed_node_ids": [
+            "OV3_F07",
+            "OV3_F06"
+          ],
+          "expected_focus": "Next steps involving adjuvant therapy decisions or further staging."
+        },
+        {
+          "query_id": "q_05",
+          "query_type": "page_jump_continuation",
+          "question": "A patient with no residual disease has completed surgical staging. Which guideline page should be consulted for adjuvant therapy options?",
+          "seed_node_ids": [
+            "OV3_F05"
+          ],
+          "expected_focus": "Identification of the subsequent page (OV-4) for adjuvant therapy guidance."
+        },
+        {
+          "query_id": "q_06",
+          "query_type": "biomarker_or_testing",
+          "question": "Which specific tumor markers and imaging modalities are listed as clinically indicated during the initial workup for these patients?",
+          "seed_node_ids": [
+            "OV3_F02"
+          ],
+          "expected_focus": "List of biomarkers (CA-125) and imaging types (CT, MRI, PET/CT) required for evaluation."
+        },
+        {
+          "query_id": "q_07",
+          "query_type": "branch_disambiguation",
+          "question": "What distinguishes the management path for a patient with suspect stage I disease versus one with suspect stage II-IV disease regarding surgical staging?",
+          "seed_node_ids": [
+            "OV3_F03",
+            "OV3_F06",
+            "OV3_F04",
+            "OV3_F07"
+          ],
+          "expected_focus": "Clarification that both groups consider surgical staging if not previously done, but for different systemic therapy decision contexts."
+        },
+        {
+          "query_id": "q_08",
+          "query_type": "stress_test_partial_support",
+          "question": "The patient has newly diagnosed ovarian cancer and we know they have BRCA mutations, but the current workup shows no evidence of residual disease. Do we need to repeat germline testing per this page?",
+          "seed_node_ids": [
+            "OV3_F03",
+            "OV3_F02"
+          ],
+          "expected_focus": "Stress test: The page mentions 'if not previously done', requiring inference on whether known status negates the need for repetition."
+        },
+        {
+          "query_id": "q_09",
+          "query_type": "monitoring_followup",
+          "question": "Following the initial evaluation for a patient with newly diagnosed ovarian cancer, which clinical parameters like CBC and chemistry profiles are recommended to be tracked?",
+          "seed_node_ids": [
+            "OV3_F02"
+          ],
+          "expected_focus": "Specific monitoring labs and follow-up assessments mentioned in the evaluation node."
+        },
+        {
+          "query_id": "q_10",
+          "query_type": "disease_to_evaluation",
+          "question": "For a patient with evidence of residual disease, is there any mention of reviewing prior operative notes or pathology as part of the workup?",
+          "seed_node_ids": [
+            "OV3_F08",
+            "OV3_F02"
+          ],
+          "expected_focus": "Confirmation that review of prior imaging, operative notes, and pathology is a standard evaluation step regardless of residual disease status."
+        }
+      ]
+    },
+    {
+      "page_code": "OV-4",
+      "page_title": "PATHOLOGIC STAGING / PRIMARY CHEMOTHERAPY/PRIMARY ADJUVANT THERAPY",
+      "queries": [
+        {
+          "query_id": "Q01",
+          "query_type": "pathway_overview",
+          "question": "What are the primary treatment pathways for epithelial ovarian cancer patients based on their pathologic stage as outlined in this guideline section?",
+          "seed_node_ids": [
+            "OV4_F03",
+            "OV4_F11"
+          ],
+          "expected_focus": "Overview of treatment options stratified by Stage IA/IB, IC, and II-IV disease."
+        },
+        {
+          "query_id": "Q02",
+          "query_type": "disease_to_treatment",
+          "question": "For a patient with Stage III high-grade serous carcinoma, what is the recommended primary chemotherapy regimen?",
+          "seed_node_ids": [
+            "OV4_F11",
+            "OV4_F12"
+          ],
+          "expected_focus": "Identification of platinum-based chemotherapy as the standard treatment for Stage III disease."
+        },
+        {
+          "query_id": "Q03",
+          "query_type": "evaluation_to_decision",
+          "question": "If imaging indicates stable disease or progression after initial therapy, what management steps are suggested in this pathway?",
+          "seed_node_ids": [
+            "OV4_N02",
+            "OV4_F13"
+          ],
+          "expected_focus": "Decision to provide symptom management and refer for palliative care assessment."
+        },
+        {
+          "query_id": "Q04",
+          "query_type": "treatment_followup",
+          "question": "After completing primary chemotherapy for Stage I high-grade serous carcinoma, where should the patient be directed for maintenance considerations?",
+          "seed_node_ids": [
+            "OV4_F05",
+            "OV4_F16"
+          ],
+          "expected_focus": "Navigation to the Maintenance Therapy page (OV-5) following adjuvant treatment."
+        },
+        {
+          "query_id": "Q05",
+          "query_type": "page_jump_continuation",
+          "question": "A patient with less common ovarian cancers needs to follow a specific sub-pathway. Which page code directs the clinician to these guidelines?",
+          "seed_node_ids": [
+            "OV4_F01",
+            "OV4_F02"
+          ],
+          "expected_focus": "Jump to the LCOC-1 page for less common ovarian cancer specifics."
+        },
+        {
+          "query_id": "Q06",
+          "query_type": "monitoring_followup",
+          "question": "Once primary treatment is complete, which NCCN page outlines the monitoring and follow-up schedule for ovarian cancer survivors?",
+          "seed_node_ids": [
+            "OV4_F10"
+          ],
+          "expected_focus": "Reference to the Monitoring/Follow-up page (OV-6)."
+        },
+        {
+          "query_id": "Q07",
+          "query_type": "biomarker_or_testing",
+          "question": "What types of imaging studies are clinically indicated for evaluating response or recurrence in this staging context?",
+          "seed_node_ids": [
+            "OV4_F14"
+          ],
+          "expected_focus": "List of recommended imaging modalities including C/A/P CT, MRI, and PET/CT."
+        },
+        {
+          "query_id": "Q08",
+          "query_type": "branch_disambiguation",
+          "question": "How does the treatment recommendation differ between a patient with Grade 2 endometrioid tumor at Stage IA versus one with Grade 3 high-grade serous carcinoma at the same stage?",
+          "seed_node_ids": [
+            "OV4_F03",
+            "OV4_F04",
+            "OV4_F05",
+            "OV4_F06",
+            "OV4_F07"
+          ],
+          "expected_focus": "Distinction between observation for low-risk Grade 2 and platinum-based therapy for high-risk Grade 3 disease."
+        },
+        {
+          "query_id": "Q09",
+          "query_type": "stress_test_partial_support",
+          "question": "For a patient with Stage IV disease who has completed platinum-based therapy but presents with new neurological symptoms not covered in the general imaging section, what immediate action is suggested?",
+          "seed_node_ids": [
+            "OV4_F11",
+            "OV4_F12",
+            "OV4_F13"
+          ],
+          "expected_focus": "Partial support: Suggests palliative care referral, though specific neurological workup details may require external knowledge."
+        },
+        {
+          "query_id": "Q10",
+          "query_type": "disease_to_evaluation",
+          "question": "In cases of persistent disease or recurrence after primary therapy, which subsequent pathway should be consulted for therapeutic options?",
+          "seed_node_ids": [
+            "OV4_N02",
+            "OV4_F18"
+          ],
+          "expected_focus": "Direction to the Therapy for Persistent Disease or Recurrence page (OV-7)."
+        }
+      ]
+    },
+    {
+      "page_code": "OV-5",
+      "page_title": "STAGE II, III, IV POST PRIMARY TREATMENT – MAINTENANCE THERAPY",
+      "queries": [
+        {
+          "query_id": "q_01",
+          "query_type": "pathway_overview",
+          "question": "What are the maintenance therapy options for stage II-IV epithelial ovarian cancer patients who achieved a complete response or partial response after primary treatment?",
+          "seed_node_ids": [
+            "OV5_F01"
+          ],
+          "expected_focus": "Overview of post-primary treatment maintenance pathways based on disease status."
+        },
+        {
+          "query_id": "q_02",
+          "query_type": "disease_to_treatment",
+          "question": "For a patient with no history of bevacizumab use in primary therapy and known BRCA1/2 germline mutation, what category 1 maintenance therapies are recommended?",
+          "seed_node_ids": [
+            "OV5_F02",
+            "OV5_F06",
+            "OV5_F07"
+          ],
+          "expected_focus": "Identification of Category 1 PARP inhibitors for BRCA-mutated patients without prior bevacizumab."
+        },
+        {
+          "query_id": "q_03",
+          "query_type": "evaluation_to_decision",
+          "question": "How does HR deficiency status influence the choice between single-agent olaparib versus combination therapy with bevacizumab in patients who received bevacizumab during primary treatment?",
+          "seed_node_ids": [
+            "OV5_F08",
+            "OV5_F10",
+            "OV5_F11",
+            "OV5_F12",
+            "OV5_F13"
+          ],
+          "expected_focus": "Decision logic comparing monotherapy vs. combination therapy based on HR status."
+        },
+        {
+          "query_id": "q_04",
+          "query_type": "treatment_followup",
+          "question": "If a patient is treated with niraparib for HR-deficient disease without prior bevacizumab, what alternative options exist if they cannot tolerate it later?",
+          "seed_node_ids": [
+            "OV5_F02",
+            "OV5_F12",
+            "OV5_F04"
+          ],
+          "expected_focus": "Alternative maintenance strategies when initial selection faces tolerance issues."
+        },
+        {
+          "query_id": "q_05",
+          "query_type": "page_jump_continuation",
+          "question": "After completing the maintenance therapy decisions outlined here, where should we direct the patient for ongoing monitoring and follow-up protocols?",
+          "seed_node_ids": [
+            "OV5_F16"
+          ],
+          "expected_focus": "Navigation to the subsequent monitoring page (OV-6)."
+        },
+        {
+          "query_id": "q_06",
+          "query_type": "biomarker_or_testing",
+          "question": "Does the guideline distinguish between germline and somatic BRCA mutations when recommending olaparib or niraparib as maintenance therapy?",
+          "seed_node_ids": [
+            "OV5_F06",
+            "OV5_F14",
+            "OV5_F07",
+            "OV5_F15"
+          ],
+          "expected_focus": "Clarification of biomarker testing requirements for specific drug eligibility."
+        },
+        {
+          "query_id": "q_07",
+          "query_type": "branch_disambiguation",
+          "question": "For a patient with wild-type BRCA who received bevacizumab in primary therapy, is Rucaparib an option, or is Bevacizumab alone preferred over Olaparib monotherapy?",
+          "seed_node_ids": [
+            "OV5_F08",
+            "OV5_F09",
+            "OV5_F10",
+            "OV5_F11",
+            "OV5_F13"
+          ],
+          "expected_focus": "Disambiguation of treatment hierarchy for HR-proficient patients with prior bevacizumab."
+        },
+        {
+          "query_id": "q_08",
+          "query_type": "monitoring_followup",
+          "question": "Are there specific follow-up recommendations for patients who choose 'Observe' as their maintenance strategy due to select stage II disease with complete response?",
+          "seed_node_ids": [
+            "OV5_F04",
+            "OV5_F07"
+          ],
+          "expected_focus": "Follow-up expectations for observation-only arms of the pathway."
+        },
+        {
+          "query_id": "q_09",
+          "query_type": "stress_test_partial_support",
+          "question": "A patient has a TP53 mutation but unknown BRCA status and had bevacizumab in primary therapy; can they receive Niraparib + Bevacizumab according to this page?",
+          "seed_node_ids": [
+            "OV5_F08",
+            "OV5_F09",
+            "OV5_F13"
+          ],
+          "expected_focus": "Stress test to see if the graph incorrectly infers support for non-BRCA/HR-specific combinations or handles unknown BRCA status correctly."
+        },
+        {
+          "query_id": "q_10",
+          "query_type": "disease_to_evaluation",
+          "question": "If a patient progresses during maintenance therapy, which section of the guidelines should be consulted for persistent disease or recurrence management?",
+          "seed_node_ids": [
+            "OV5_N01"
+          ],
+          "expected_focus": "Transition from maintenance to progression/recurrence evaluation (OV-7)."
+        }
+      ]
+    },
+    {
+      "page_code": "OV-6",
+      "page_title": "MONITORING/FOLLOW-UP FOR PATIENTS NOT RECEIVING TREATMENT\nRECURRENT DISEASE",
+      "queries": [
+        {
+          "query_id": "q01",
+          "query_type": "pathway_overview",
+          "question": "What is the recommended surveillance schedule for a patient with Stage III epithelial ovarian cancer who has completed primary treatment and is currently not on therapy?",
+          "seed_node_ids": [
+            "OV6_F01",
+            "OV6_F02"
+          ],
+          "expected_focus": "Retrieve the specific visit frequency timeline (every 2-4 mo, then 3-6 mo, then annually) and components of the physical exam."
+        },
+        {
+          "query_id": "q02",
+          "query_type": "disease_to_evaluation",
+          "question": "For a patient presenting with clinical relapse after prior chemotherapy, what imaging modalities are indicated if they are being monitored rather than immediately treated?",
+          "seed_node_ids": [
+            "OV6_N02",
+            "OV6_F07"
+          ],
+          "expected_focus": "Identify the list of acceptable imaging studies (C/A/P CT, MRI, PET/CT, or PET) for recurrent disease evaluation."
+        },
+        {
+          "query_id": "q03",
+          "query_type": "evaluation_to_decision",
+          "question": "If a patient shows serially rising CA-125 levels but no clinical symptoms, what are the management options regarding immediate versus delayed treatment?",
+          "seed_node_ids": [
+            "OV6_N03",
+            "OV6_N04"
+          ],
+          "expected_focus": "Determine the choice between delaying treatment until clinical relapse or initiating immediate treatment for recurrent disease."
+        },
+        {
+          "query_id": "q04",
+          "query_type": "treatment_followup",
+          "question": "After identifying recurrent disease, which node directs the clinician to the specific therapy protocols for persistent or recurrent conditions?",
+          "seed_node_ids": [
+            "OV6_N02",
+            "OV6_F08"
+          ],
+          "expected_focus": "Locate the page jump reference to 'Therapy for Persistent Disease or Recurrence' (OV-7)."
+        },
+        {
+          "query_id": "q05",
+          "query_type": "monitoring_followup",
+          "question": "What are the long-term wellness care recommendations for survivors of epithelial ovarian cancer during the follow-up period?",
+          "seed_node_ids": [
+            "OV6_F02"
+          ],
+          "expected_focus": "Find the reference to NCCN Guidelines for Survivorship within the monitoring node."
+        },
+        {
+          "query_id": "q06",
+          "query_type": "biomarker_or_testing",
+          "question": "Is tumor molecular testing required for patients with recurrent disease if it was not performed during their initial workup?",
+          "seed_node_ids": [
+            "OV6_F04",
+            "OV6_F10"
+          ],
+          "expected_focus": "Confirm the indication for tumor molecular testing in the context of recurrent disease evaluation."
+        },
+        {
+          "query_id": "q07",
+          "query_type": "branch_disambiguation",
+          "question": "How does the monitoring approach differ for a patient with rising CA-125 but no previous chemotherapy compared to one with clinical relapse and prior chemotherapy?",
+          "seed_node_ids": [
+            "OV6_N01",
+            "OV6_N02"
+          ],
+          "expected_focus": "Compare the starting conditions for patients with no prior chemo versus those with prior chemo to understand branching logic."
+        },
+        {
+          "query_id": "q08",
+          "query_type": "page_jump_continuation",
+          "question": "Where should a clinician refer if they need to review the initial primary treatment guidelines for a patient now presenting with recurrence?",
+          "seed_node_ids": [
+            "OV6_F05"
+          ],
+          "expected_focus": "Identify the link back to the 'Primary Treatment' section (OV-1)."
+        },
+        {
+          "query_id": "q09",
+          "query_type": "stress_test_partial_support",
+          "question": "A patient with Stage IV disease has a normal CA-125 but new neurological symptoms; does this page recommend brain MRI as part of the standard surveillance?",
+          "seed_node_ids": [
+            "OV6_F02",
+            "OV6_F04"
+          ],
+          "expected_focus": "Check if brain imaging is explicitly listed in the standard surveillance nodes or if it falls under 'as clinically indicated' without explicit mention of skull base imaging beyond general notes."
+        },
+        {
+          "query_id": "q10",
+          "query_type": "disease_to_treatment",
+          "question": "For a patient with clinical relapse and no previous chemotherapy, is immediate treatment for recurrent disease considered a category 2B recommendation?",
+          "seed_node_ids": [
+            "OV6_N01",
+            "OV6_N04"
+          ],
+          "expected_focus": "Verify the evidence category (2B) associated with immediate treatment for recurrent disease in patients with no prior chemotherapy."
+        }
+      ]
+    },
+    {
+      "page_code": "OV-7",
+      "page_title": "DISEASE STATUS / THERAPY FOR PERSISTENT DISEASE OR RECURRENCE",
+      "queries": [
+        {
+          "query_id": "q1",
+          "query_type": "pathway_overview",
+          "question": "What is the primary purpose of this NCCN page regarding ovarian cancer management?",
+          "seed_node_ids": [
+            "OV7_F01",
+            "OV7_F03"
+          ],
+          "expected_focus": "Retrieve the scope definition for disease status and therapy selection in persistent or recurrent disease."
+        },
+        {
+          "query_id": "q2",
+          "query_type": "disease_to_treatment",
+          "question": "If a patient has platinum-resistant disease defined as progression on primary therapy, what treatment options are listed here?",
+          "seed_node_ids": [
+            "OV7_F01",
+            "OV7_F02"
+          ],
+          "expected_focus": "Identify Best supportive care and Recurrence therapy options linked to platinum-resistant status."
+        },
+        {
+          "query_id": "q3",
+          "query_type": "evaluation_to_decision",
+          "question": "How does the guideline distinguish between platinum-sensitive and platinum-resistant disease based on time to relapse?",
+          "seed_node_ids": [
+            "OV7_F01",
+            "OV7_F03"
+          ],
+          "expected_focus": "Extract the specific time thresholds (less than 6 months vs. greater than or equal to 6 months) defining resistance and sensitivity."
+        },
+        {
+          "query_id": "q4",
+          "query_type": "biomarker_or_testing",
+          "question": "Does this page define any specific molecular biomarkers required to classify a patient as platinum-resistant?",
+          "seed_node_ids": [
+            "OV7_F01"
+          ],
+          "expected_focus": "Confirm that classification relies on clinical response timing rather than specific molecular markers on this page."
+        },
+        {
+          "query_id": "q5",
+          "query_type": "branch_disambiguation",
+          "question": "A patient had complete remission but relapsed 5 months after completing chemotherapy; should they be managed as platinum-sensitive or resistant?",
+          "seed_node_ids": [
+            "OV7_F01",
+            "OV7_F03"
+          ],
+          "expected_focus": "Determine that relapse <6 months classifies the disease as platinum-resistant."
+        },
+        {
+          "query_id": "q6",
+          "query_type": "treatment_followup",
+          "question": "For a patient with stable or persistent disease who is not currently on maintenance therapy, how is their status categorized?",
+          "seed_node_ids": [
+            "OV7_F01"
+          ],
+          "expected_focus": "Verify that stable/persistent disease without maintenance therapy qualifies as platinum-resistant."
+        },
+        {
+          "query_id": "q7",
+          "query_type": "page_jump_continuation",
+          "question": "Where should I look next for the specific recurrence therapy regimens mentioned for platinum-resistant patients?",
+          "seed_node_ids": [
+            "OV7_F02",
+            "OV7_F04"
+          ],
+          "expected_focus": "Identify the cross-reference to Page OV-8 for detailed recurrence therapy options."
+        },
+        {
+          "query_id": "q8",
+          "query_type": "stress_test_partial_support",
+          "question": "The patient has platinum-resistant disease and also carries a BRCA mutation; does this page specify a different first-line therapy compared to wild-type?",
+          "seed_node_ids": [
+            "OV7_F01",
+            "OV7_F02"
+          ],
+          "expected_focus": "Check if the current page differentiates therapy based on BRCA status, noting it likely refers to other pages for such specifics."
+        },
+        {
+          "query_id": "q9",
+          "query_type": "monitoring_followup",
+          "question": "Is there any guidance on monitoring frequency for patients receiving best supportive care while awaiting further decisions?",
+          "seed_node_ids": [
+            "OV7_F02"
+          ],
+          "expected_focus": "Confirm whether monitoring protocols are detailed on this page or referenced elsewhere."
+        },
+        {
+          "query_id": "q10",
+          "query_type": "disease_to_evaluation",
+          "question": "What clinical scenarios qualify a patient for 'platinum-sensitive' classification according to this text?",
+          "seed_node_ids": [
+            "OV7_F03"
+          ],
+          "expected_focus": "List the criteria: complete remission followed by relapse 6 months or more after prior chemotherapy."
+        }
+      ]
+    },
+    {
+      "page_code": "OV-8",
+      "page_title": "RECURRENCE THERAPY FOR PLATINUM-SENSITIVE DISEASE",
+      "queries": [
+        {
+          "query_id": "q1",
+          "query_type": "pathway_overview",
+          "question": "What are the primary management strategies outlined for platinum-sensitive recurrent epithelial ovarian cancer?",
+          "seed_node_ids": [
+            "OV8_F01",
+            "OV8_F04"
+          ],
+          "expected_focus": "Overview of surgery, chemotherapy, maintenance, and supportive care options."
+        },
+        {
+          "query_id": "q2",
+          "query_type": "disease_to_treatment",
+          "question": "For a patient with radiographic relapse who had complete remission 8 months after prior chemotherapy, what is the preferred first-line treatment option?",
+          "seed_node_ids": [
+            "OV8_F01",
+            "OV8_F04"
+          ],
+          "expected_focus": "Identification of combination platinum-based chemotherapy as category 1 preferred therapy."
+        },
+        {
+          "query_id": "q3",
+          "query_type": "evaluation_to_decision",
+          "question": "How should a clinician manage a patient presenting with biochemical relapse (rising CA-125) but no radiographic evidence of disease?",
+          "seed_node_ids": [
+            "OV8_F07",
+            "OV8_F08"
+          ],
+          "expected_focus": "Decision to delay treatment until clinical or radiographic relapse occurs."
+        },
+        {
+          "query_id": "q4",
+          "query_type": "treatment_followup",
+          "question": "If a patient achieves a partial response to recurrence therapy, what maintenance options are recommended based on their mutation status and prior bevacizumab use?",
+          "seed_node_ids": [
+            "OV8_F05"
+          ],
+          "expected_focus": "Maintenance options including continuing bevacizumab, PARPi for BRCA mutations, or observation."
+        },
+        {
+          "query_id": "q5",
+          "query_type": "biomarker_or_testing",
+          "question": "Under what specific genetic conditions is PARPi therapy indicated as a category 1 maintenance option for platinum-sensitive recurrence?",
+          "seed_node_ids": [
+            "OV8_F05"
+          ],
+          "expected_focus": "Indication of PARPi therapy for patients with BRCA1/2 mutations who have not progressed during prior PARPi treatment."
+        },
+        {
+          "query_id": "q6",
+          "query_type": "branch_disambiguation",
+          "question": "What is the difference in management between a patient with confirmed radiographic relapse versus one with only biochemical relapse?",
+          "seed_node_ids": [
+            "OV8_F02",
+            "OV8_F07",
+            "OV8_F09"
+          ],
+          "expected_focus": "Distinction between immediate platinum-based therapy for radiographic relapse versus delaying treatment for biochemical relapse."
+        },
+        {
+          "query_id": "q7",
+          "query_type": "page_jump_continuation",
+          "question": "After completing initial recurrence therapy, where can I find the guidelines for long-term monitoring and follow-up schedules?",
+          "seed_node_ids": [
+            "OV8_F06"
+          ],
+          "expected_focus": "Navigation to the Monitoring/Follow-up page (OV-6)."
+        },
+        {
+          "query_id": "q8",
+          "query_type": "disease_to_evaluation",
+          "question": "What defines 'platinum-sensitive disease' in the context of recurrent ovarian cancer according to these guidelines?",
+          "seed_node_ids": [
+            "OV8_F01"
+          ],
+          "expected_focus": "Definition requiring complete remission and relapse occurring at least 6 months after prior chemotherapy."
+        },
+        {
+          "query_id": "q9",
+          "query_type": "stress_test_partial_support",
+          "question": "A patient has platinum-sensitive recurrence and wants to know if they can start immunotherapy immediately instead of platinum-based chemo. Does this guideline support that switch?",
+          "seed_node_ids": [
+            "OV8_F04"
+          ],
+          "expected_focus": "Stress test: The page supports platinum-based chemo or best supportive care; immunotherapy is not explicitly listed here."
+        },
+        {
+          "query_id": "q10",
+          "query_type": "monitoring_followup",
+          "question": "Is secondary cytoreductive surgery considered an option for all platinum-sensitive recurrent patients, or are there specific considerations?",
+          "seed_node_ids": [
+            "OV8_F03"
+          ],
+          "expected_focus": "Clarification that secondary cytoreductive surgery is a consideration, often implying selection criteria not fully detailed in this summary node."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+# Python caches and build artifacts
+__pycache__/
+*.py[cod]
+*.so
+.Python
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Environments and secrets
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+.conda/
+.conda-*/
+
+# Databases and runtime sidecars
+*.db
+*.sqlite3
+omgs_nccn_api_trace.db
+
+# Notebook and editor noise
+.ipynb_checkpoints/
+.vscode/
+.idea/
+*.swp
+.DS_Store
+tmp/
+
+# Private NCCN hydration stays local only
+data/raw/**
+data/processed/**
+data/ref/**
+data/manifests/**
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/ref/.gitkeep
+!data/manifests/.gitkeep
+!data/manifests/ov_2025_stitch_map.json
+!data/manifests/ov_2025_footnote_link_overrides.json
+
+# Public bundled examples
+example/.ipynb_checkpoints/
+
+# Review app local artifacts
+review/tldraw_app/node_modules/
+review/tldraw_app/dist/

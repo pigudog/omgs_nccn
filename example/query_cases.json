@@ -1,0 +1,68 @@
+[
+  {
+    "case_id": "0",
+    "title": "HER2与叶酸受体双特征铂耐药多线型",
+    "zh": "患者57岁，卵巢癌，铂耐药，三线，既往使用过PARP抑制剂和贝伐单抗，HER2++，叶酸受体表达阳性",
+    "en": "57-year-old patient with ovarian cancer, platinum-resistant, in the third-line setting, previously treated with a PARP inhibitor and bevacizumab, HER2++, folate receptor positive."
+  },
+  {
+    "case_id": "1",
+    "title": "晚期初治高风险型",
+    "zh": "61岁女性，高级别浆液性卵巢癌，FIGO IVB期，初始减瘤术后残留病灶 >1cm（R2），BRCA野生型但HRD阳性，一线化疗后维持治疗。",
+    "en": "61-year-old female, high-grade serous ovarian cancer, FIGO Stage IVB, sub-optimal debulking (R2, residual >1cm), BRCA wild-type but HRD positive, first-line post-chemotherapy maintenance."
+  },
+  {
+    "case_id": "2",
+    "title": "早发性生殖系突变铂敏感型",
+    "zh": "42岁女性，输卵管癌，gBRCA2突变阳性，铂敏感复发（DFI 18个月），二线化疗达完全缓解，后续维持治疗方案选择。",
+    "en": "42-year-old female, fallopian tube cancer, gBRCA2 mutation positive, platinum-sensitive recurrence (DFI 18 months), CR achieved after second-line chemotherapy, seeking maintenance options."
+  },
+  {
+    "case_id": "3",
+    "title": "多线耐药且伴有罕见靶点型",
+    "zh": "65岁女性，卵巢内膜样癌，铂耐药复发，五线治疗，既往接受过紫杉醇、脂质体阿霉素及PARP抑制剂，PIK3CA突变阳性。",
+    "en": "65-year-old female, endometrioid ovarian cancer, platinum-resistant recurrence, 5th-line therapy, prior exposure to paclitaxel, PLD, and PARP inhibitors, PIK3CA mutation positive."
+  },
+  {
+    "case_id": "4",
+    "title": "低级别浆液性罕见突变型",
+    "zh": "38岁女性，低级别浆液性卵巢癌（LGSOC），三线治疗，存在KRAS突变，对既往内分泌治疗及常规化疗反应不佳。",
+    "en": "38-year-old female, low-grade serous ovarian cancer (LGSOC), 3rd-line therapy, KRAS mutation positive, refractory to prior endocrine therapy and standard chemotherapy."
+  },
+  {
+    "case_id": "5",
+    "title": "透明细胞癌伴免疫微环境特征",
+    "zh": "55岁女性，卵巢透明细胞癌，二线铂类化疗耐药，MSI-H（高度微卫星不稳定），既往未使用过免疫检查点抑制剂。",
+    "en": "55-year-old female, ovarian clear cell carcinoma, second-line platinum resistance, MSI-H (Microsatellite Instability-High), immune checkpoint inhibitor naive."
+  },
+  {
+    "case_id": "6",
+    "title": "高龄铂敏感且无法耐受化疗型",
+    "zh": "78岁女性，高级别浆液性卵巢癌，铂敏感复发，gBRCA1突变，因心脏合并症无法耐受再次化疗，考虑非化疗减瘤或靶向单药方案。",
+    "en": "78-year-old female, high-grade serous ovarian cancer, platinum-sensitive recurrence, gBRCA1 mutation, unable to tolerate re-challenge chemotherapy due to cardiac comorbidities, considering non-chemo targeted monotherapy."
+  },
+  {
+    "case_id": "7",
+    "title": "FRα强阳性铂耐药型",
+    "zh": "59岁女性，卵巢浆液性癌，铂耐药，四线治疗，既往曾行奥拉帕利维持治疗，免疫组化示叶酸受体α（FRα）表达（TPS >75%）。",
+    "en": "59-year-old female, serous ovarian cancer, platinum-resistant, 4th-line therapy, prior Olaparib maintenance, IHC shows high Folate Receptor-alpha (FRα) expression (TPS >75%)."
+  },
+  {
+    "case_id": "8",
+    "title": "铂敏感复发伴BRCA野生型/HRD阴性",
+    "zh": "50岁女性，高级别浆液性卵巢癌，铂敏感复发（DFI 10个月），BRCA/HRD双阴性，既往接受过贝伐单抗。",
+    "en": "50-year-old female, high-grade serous ovarian cancer, platinum-sensitive recurrence (DFI 10 months), BRCA/HRD double negative, prior Bevacizumab exposure."
+  },
+  {
+    "case_id": "9",
+    "title": "腹膜癌伴特定通路改变",
+    "zh": "63岁女性，原发性腹膜癌，铂敏感复发，三线化疗后，伴有ARID1A突变，探索ADC药物或联合免疫治疗临床试验。",
+    "en": "63-year-old female, primary peritoneal cancer, platinum-sensitive recurrence, post 3rd-line chemotherapy, ARID1A mutation, exploring ADC or IO combination clinical trials."
+  },
+  {
+    "case_id": "10",
+    "title": "铂类难治型（Primary Refractory）",
+    "zh": "47岁女性，卵巢浆液性癌，一线含铂化疗期间出现进展（铂类难治），TP53突变，寻求非铂类联合用药方案。",
+    "en": "47-year-old female, serous ovarian cancer, disease progression during first-line platinum-based chemotherapy (platinum-refractory), TP53 mutation, seeking non-platinum combination regimens."
+  }
+]

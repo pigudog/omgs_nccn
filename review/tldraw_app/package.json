@@ -1,0 +1,24 @@
+{
+  "name": "omgs-nccn-review-app",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:draft": "node scripts/dev-page.mjs --draft",
+    "dev:typed": "node scripts/dev-page.mjs --typed",
+    "dev:reviewed": "node scripts/dev-page.mjs --reviewed",
+    "dev:global": "node scripts/dev-page.mjs --global",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tldraw/tldraw": "2.4.6",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.3.1",
+    "vite": "5.4.8"
+  }
+}

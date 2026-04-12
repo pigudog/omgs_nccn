@@ -1,0 +1,61 @@
+{
+  "guideline": "NCCN_OV_2025",
+  "version": "2025",
+  "page_order": [
+    "OV-1",
+    "OV-2",
+    "OV-3",
+    "OV-4",
+    "OV-5",
+    "OV-6",
+    "OV-7",
+    "OV-8",
+    "LCOC-1",
+    "LCOC-2",
+    "LCOC-3",
+    "LCOC-4",
+    "LCOC-5",
+    "LCOC-6",
+    "LCOC-7",
+    "LCOC-8",
+    "LCOC-9",
+    "LCOC-10",
+    "LCOC-11",
+    "LCOC-12",
+    "LCOC-13",
+    "LCOC-14"
+  ],
+  "page_anchor_overrides": {},
+  "external_aliases": {
+    "OV-A": {
+      "node_id": "EXT_OV_A",
+      "label": "OV-A",
+      "node_type": "reference",
+      "description": "External ovarian principles reference page OV-A."
+    },
+    "OV-B": {
+      "node_id": "EXT_OV_B",
+      "label": "OV-B",
+      "node_type": "reference",
+      "description": "External ovarian principles reference page OV-B."
+    },
+    "OV-C": {
+      "node_id": "EXT_OV_C",
+      "label": "OV-C",
+      "node_type": "reference",
+      "description": "External ovarian systemic therapy reference page OV-C."
+    },
+    "LCOC-A": {
+      "node_id": "EXT_LCOC_A",
+      "label": "LCOC-A",
+      "node_type": "reference",
+      "description": "External LCOC reference page LCOC-A."
+    },
+    "LCOC-B": {
+      "node_id": "EXT_LCOC_B",
+      "label": "LCOC-B",
+      "node_type": "reference",
+      "description": "External LCOC surveillance reference page LCOC-B."
+    }
+  }
+}

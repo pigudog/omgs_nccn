@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools==75.8.0", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omgs-nccn"
+version = "0.1.0"
+description = "NCCN guideline engineering workspace for the OMGS project line."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = "==3.10.16"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "anthropic==0.46.0",
+    "click==8.3.1",
+    "einops==0.8.2",
+    "filetype==1.2.0",
+    "ftfy==6.3.1",
+    "google-genai==1.68.0",
+    "httpx==0.28.1",
+    "markdown2==2.5.5",
+    "markdownify==1.2.2",
+    "marker-pdf==1.10.2",
+    "neo4j==6.1.0",
+    "numpy==2.1.2",
+    "opencv-python-headless==4.11.0.86",
+    "openai==1.109.1",
+    "pdftext==0.6.3",
+    "pillow==10.4.0",
+    "platformdirs==4.9.4",
+    "pydantic==2.12.5",
+    "pydantic-settings==2.13.1",
+    "pypdf==6.9.2",
+    "pypdfium2==4.30.0",
+    "pdfplumber==0.11.9",
+    "PyMuPDF==1.27.2.2",
+    "python-dotenv==1.2.2",
+    "rapidfuzz==3.14.3",
+    "regex==2024.11.6",
+    "requests==2.33.1",
+    "scikit-learn==1.7.2",
+    "surya-ocr==0.17.1",
+    "torch==2.11.0",
+    "tqdm==4.67.3",
+    "transformers==4.57.6",
+]
+
+[project.scripts]
+omgs-nccn = "omgs_nccn.cli.main:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
