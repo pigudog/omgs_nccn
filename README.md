@@ -1,18 +1,20 @@
 # omgs-nccn
 
-This repository builds NCCN graph assets for `omgs_engine`.
+This repository builds typed NCCN graph assets for [`omgs_engine`](https://github.com/pigudog/omgs_engine).
 
-Licensed NCCN source files are not included.
+Licensed NCCN source files, PDFs, and extracted guideline content are not distributed in this repository.
+
+## Physician-led typed NCCN graph review
 
 You are free to build your own NCCN graph-RAG pipeline.
-
-Physician-led typed NCCN graph review
 
 Our view is that guideline graphs and automated retrieval should support, not replace, clinician judgement. Real-world oncology decision-making often depends not only on published guideline content, but also on the latest practice changes, emerging or not-yet-published clinical trial signals, and region-specific experience. For that reason, we intentionally adopt a semi-automated approach that keeps final knowledge interpretation and decision-making in the hands of physicians.
 
 ![supfig](fig/supfig.png)
 
-This framework represents the guideline flowchart as a structured directed graph composed of Condition, Evaluation, Treatment, and Page Jump nodes, while preserving the original decision logic and path constraints through relations such as is followed by, requires, and indicates. In addition, each treatment option is linked to its corresponding footnotes, principle statements, and reference pages, integrating information that is otherwise scattered across the flowchart, annotations, and main text into traceable, retrievable, and interpretable page-level knowledge units. This provides a foundation for topology-constrained retrieval and downstream clinical decision support.
+Our framework normalises NCCN flowcharts into a typed directed graph with four core node classes—**Condition**, **Evaluation**, **Treatment**, and **Page Jump**—and a constrained set of relations, including `is followed by`, `requires`, and `indicates`. This representation preserves decision topology and path constraints instead of flattening the guideline into isolated text chunks.
+
+Each treatment option is further linked to reviewed footnotes, principle statements, and reference pages, allowing information that is otherwise dispersed across the flowchart, annotations, and main text to be assembled into auditable, page-grounded knowledge units. These graph assets provide the substrate for topology-constrained, path-first retrieval and downstream clinician-in-the-loop decision support.
 
 ![show](fig/Snipaste.png)
 
@@ -147,6 +149,8 @@ bash scripts/01_build_phase1_drafts.sh OV-1
 This creates the page draft graph under:
 
 - `data/processed/ov_2025/pages/OV-1/`
+
+It first extracts nodes, then extracts edges; edge extraction uses the nodes from the previous step.
 
 ## 7. Physician Review The Page Draft
 
