@@ -1,6 +1,8 @@
 # omgs-nccn
 
-This repository builds typed NCCN graph assets for [`omgs_engine`](https://github.com/pigudog/omgs_engine).
+This repository builds typed NCCN graph assets for [`omgs_engine`](https://github.com/pigudog/omgs_engine). 
+
+It provides the graph substrate for topology-constrained, path-first guideline retrieval in [`omgs_engine`](https://github.com/pigudog/omgs_engine). 
 
 Licensed NCCN source files, PDFs, and extracted guideline content are not distributed in this repository.
 
